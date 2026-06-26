@@ -20,17 +20,20 @@ export default function Navbar() {
 
   const location = useLocation()
 
-  // Glass effect triggers at 8px scroll — fires on first subtle scroll
+  // Glass effect triggers at 20px scroll
   useEffect(() => {
-    const onScroll = () => {
-      setScrolled(window.scrollY > 8)
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20)
     }
     
-    // Check immediately in case we start scrolled down (or reset to top)
-    onScroll()
+    window.addEventListener('scroll', handleScroll, { passive: true })
     
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
+    // Check after a tiny delay to allow router to update scroll position
+    requestAnimationFrame(() => {
+      setTimeout(handleScroll, 50)
+    })
+    
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [location.pathname])
 
   // Close mobile menu when viewport reaches desktop width
@@ -61,7 +64,7 @@ export default function Navbar() {
           'rounded-[24px] sm:rounded-[32px]',
           'px-4 sm:px-8 md:px-12 py-3 sm:py-4',
           scrolled
-            ? 'bg-[#fffaf2]/85 backdrop-blur-2xl shadow-[0_18px_50px_rgba(23,32,51,0.08)] border border-white/40 supports-[backdrop-filter]:bg-[#fffaf2]/80'
+            ? 'bg-[rgba(255,250,242,0.84)] backdrop-blur-[24px] border border-[rgba(255,255,255,0.40)] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),0_18px_50px_rgba(23,32,51,0.08)] supports-[backdrop-filter]:bg-[rgba(255,250,242,0.81)]'
             : 'bg-transparent border border-transparent shadow-none',
         ].join(' ')}
       >

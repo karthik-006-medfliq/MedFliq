@@ -10,6 +10,7 @@ import Privacy from './pages/Privacy'
 import NewPrivacy from './pages/NewPrivacy'
 import Terms from './pages/Terms'
 import NewTerms from './pages/NewTerms'
+import Navbar from './components/layout/Navbar'
 
 function AppContent() {
   const location = useLocation()
@@ -37,6 +38,7 @@ export default function App() {
     <Router>
       <ScrollToTop />
       <VideoBackground />
+      <Navbar />
       <AppContent />
     </Router>
   )
