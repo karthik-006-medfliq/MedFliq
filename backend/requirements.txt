@@ -4,3 +4,4 @@ gspread
 pydantic
 email-validator
 python-dotenv
+google-auth

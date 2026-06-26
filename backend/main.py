@@ -9,8 +9,18 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
+from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI(title="MedFliq Contact API")
 
+frontend_url = os.getenv("FRONTEND_URL", "http://localhost:5173")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[frontend_url, "http://localhost:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 # Define the data model for validation
 class ContactFormSubmit(BaseModel):
     firstName: str = Field(..., min_length=1, description="First Name is required")
