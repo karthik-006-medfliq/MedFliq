@@ -91,17 +91,17 @@ export default function SpecializedCare() {
           {departments.map((dept, index) => (
             <div 
               key={index}
-              className={`group bg-[#FAF7F2] backdrop-blur-xl border border-white/80 rounded-[40px] md:rounded-[48px] p-8 md:p-10 flex flex-col shadow-[0_20px_60px_rgba(44,35,25,0.03)] min-h-[400px] transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_30px_80px_rgba(44,35,25,0.08)] ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}
+              className={`group bg-[#FAF7F2] backdrop-blur-xl border border-white/80 rounded-[40px] md:rounded-[48px] p-6 sm:p-8 md:p-10 flex flex-col shadow-[0_20px_60px_rgba(44,35,25,0.03)] min-h-0 md:min-h-[400px] transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_30px_80px_rgba(44,35,25,0.08)] ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}
               style={{ transitionDelay: `${(index + 1) * 75}ms` }}
             >
               {/* Icon Bubble */}
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-10 group-hover:-translate-y-1 transition-transform duration-300">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-6 md:mb-10 group-hover:-translate-y-1 transition-transform duration-300">
                 {dept.icon}
               </div>
 
               {/* Text Content */}
-              <div className="mb-12">
-                <h3 className="text-2xl font-black text-med-ink mb-4 leading-tight group-hover:text-med-primary transition-colors duration-300">
+              <div className="mb-6 md:mb-12">
+                <h3 className="text-xl md:text-2xl font-black text-med-ink mb-3 md:mb-4 leading-tight group-hover:text-med-primary transition-colors duration-300">
                   {dept.title}
                 </h3>
                 <p className="text-med-slate text-sm leading-relaxed font-medium">
