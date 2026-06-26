@@ -1,0 +1,886 @@
+@import "tailwindcss";
+
+/* ============================================================
+   MedFliq Theme Tokens (Tailwind v4 @theme)
+   ============================================================ */
+@theme {
+  /* --- Colors (Dark theme — reserved for dark sections) --- */
+  --color-med-dark: #040d1a;
+  --color-med-dark-2: #071224;
+  --color-med-green: #00c896;
+  --color-med-teal: #0dbbaa;
+  --color-med-muted: #7a8a9e;
+  --color-med-card: #0b1829;
+  --color-med-border: #152035;
+  --color-med-glow: rgba(0, 200, 150, 0.25);
+  --color-med-white: #ffffff;
+  --color-med-light: #e8f4f2;
+
+  /* --- Colors (Light theme — MedFliq actual brand) --- */
+  --color-med-primary: #E07B2A;
+  --color-med-primary-dark: #C96A1A;
+  --color-med-cream: #FCF6F0;
+  --color-med-cream-2: #EDE6D8;
+  --color-med-ink: #1A1A2E;
+  --color-med-slate: #5A6478;
+  --color-med-menu-bg: #ffffff;
+  --color-med-accent: #F5A623;
+
+  /* --- Fonts --- */
+  --font-med: 'Inter', 'Segoe UI', system-ui, sans-serif;
+
+  /* --- Border Radius --- */
+  --radius-med-sm: 8px;
+  --radius-med-md: 12px;
+  --radius-med-lg: 20px;
+  --radius-med-xl: 32px;
+
+  /* --- Box Shadows --- */
+  --shadow-med-card: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-med-glow: 0 0 40px rgba(0, 200, 150, 0.15);
+  --shadow-med-btn: 0 4px 20px rgba(0, 200, 150, 0.35);
+
+  /* --- Custom Animations --- */
+  --animate-fade-up: fade-up 0.6s ease both;
+  --animate-fade-in: fade-in 0.5s ease both;
+  --animate-pulse-glow: pulse-glow 3s ease-in-out infinite;
+  --animate-float: float 4s ease-in-out infinite;
+  --animate-float-subtle: float-subtle 6s ease-in-out infinite;
+}
+
+/* ============================================================
+   Custom Keyframes
+   ============================================================ */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(0, 200, 150, 0.2);
+  }
+
+  50% {
+    box-shadow: 0 0 50px rgba(0, 200, 150, 0.45);
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes shimmer-slide {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  40%,
+  100% {
+    transform: translateX(300%);
+  }
+}
+
+/* ============================================================
+   @layer base — Global resets and typography
+   ============================================================ */
+@layer base {
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: radial-gradient(circle at 50% 0%,
+        rgba(245, 166, 35, 0.08) 0%,
+        var(--color-med-cream) 60%);
+    color: var(--color-med-ink);
+    font-family: var(--font-med);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Subtle dot noise texture — matches medfliq.com noise-overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image: radial-gradient(rgba(224, 123, 42, 0.15) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  #root {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Respect prefers-reduced-motion */
+  @media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ============================================================
+   @layer components — Reusable component classes
+   ============================================================ */
+@layer components {
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--color-med-green);
+    color: var(--color-med-dark);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.75rem 1.75rem;
+    border-radius: var(--radius-med-lg);
+    box-shadow: var(--shadow-med-btn);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color-med-teal);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 28px rgba(0, 200, 150, 0.5);
+  }
+
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    color: var(--color-med-white);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.75rem 1.75rem;
+    border-radius: var(--radius-med-lg);
+    border: 1.5px solid var(--color-med-border);
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+
+  .btn-outline:hover {
+    border-color: var(--color-med-green);
+    color: var(--color-med-green);
+    transform: translateY(-2px);
+  }
+
+  .med-card {
+    background-color: var(--color-med-card);
+    border: 1px solid var(--color-med-border);
+    border-radius: var(--radius-med-md);
+    box-shadow: var(--shadow-med-card);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .med-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-med-glow);
+  }
+
+  .section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-med-green);
+  }
+
+  /* ── Hero: shimmer sweep on eyebrow badge ── */
+  .shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .shimmer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.55) 50%,
+        rgba(255, 255, 255, 0) 100%);
+    transform: translateX(-100%);
+    animation: shimmer-slide 4s ease infinite;
+  }
+
+  /* ── Hero: primary button ambient glow ── */
+  .glow {
+    box-shadow: 0 0 20px rgba(224, 123, 42, 0.2);
+  }
+
+  .glow:hover {
+    box-shadow: 0 8px 32px rgba(224, 123, 42, 0.45);
+  }
+}
+
+/* ============================================================
+   @layer utilities — Reusable utility overrides
+   ============================================================ */
+@layer utilities {
+  .text-gradient-green {
+    background: linear-gradient(135deg, var(--color-med-green), var(--color-med-teal));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* ── Hero: orange gradient heading text ── */
+  .text-gradient-orange {
+    background: linear-gradient(135deg, #E07B2A 0%, #C96A1A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* ── Hero: shadow utilities ── */
+  .shadow-premium {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07), 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  .shadow-accent {
+    box-shadow: 0 8px 30px rgba(224, 123, 42, 0.4);
+  }
+
+  .bg-med-gradient {
+    background: linear-gradient(160deg, var(--color-med-dark) 0%, var(--color-med-dark-2) 100%);
+  }
+
+  .border-glow {
+    border-color: var(--color-med-green);
+    box-shadow: 0 0 12px var(--color-med-glow);
+  }
+
+  .animate-fade-up {
+    animation: var(--animate-fade-up);
+  }
+
+  .animate-fade-in {
+    animation: var(--animate-fade-in);
+  }
+
+  .animate-pulse-glow {
+    animation: var(--animate-pulse-glow);
+  }
+
+  .animate-float {
+    animation: var(--animate-float);
+  }
+
+  /* ── Services Hero Specific Animations ── */
+  .service-hero-reveal {
+    opacity: 0;
+    animation: serviceHeroFadeUp 600ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  
+  .service-hero-reveal-scale {
+    opacity: 0;
+    animation: serviceHeroFadeScale 650ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .service-hero-delay-1 { animation-delay: 100ms; }
+  .service-hero-delay-2 { animation-delay: 200ms; }
+  .service-hero-delay-3 { animation-delay: 300ms; }
+  .service-hero-delay-4 { animation-delay: 400ms; }
+  .service-hero-delay-5 { animation-delay: 500ms; }
+  .service-hero-delay-6 { animation-delay: 600ms; }
+  .service-hero-delay-7 { animation-delay: 700ms; }
+
+  .services-overview-reveal {
+    opacity: 0;
+    animation: servicesOverviewFadeUp 600ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .services-overview-delay-1 { animation-delay: 100ms; }
+  .services-overview-delay-2 { animation-delay: 200ms; }
+  .services-overview-delay-3 { animation-delay: 300ms; }
+
+  .services-card-reveal {
+    opacity: 0;
+    animation: servicesCardFadeUp 650ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .services-card-delay-100 { animation-delay: 100ms; }
+  .services-card-delay-200 { animation-delay: 200ms; }
+  .services-card-delay-300 { animation-delay: 300ms; }
+  .services-card-delay-400 { animation-delay: 400ms; }
+  .services-card-delay-500 { animation-delay: 500ms; }
+  .services-card-delay-600 { animation-delay: 600ms; }
+
+  .services-why-reveal {
+    opacity: 0;
+    animation: servicesWhyFadeUp 650ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .services-why-delay-100 { animation-delay: 100ms; }
+  .services-why-delay-200 { animation-delay: 200ms; }
+  .services-why-delay-300 { animation-delay: 300ms; }
+  .services-why-delay-400 { animation-delay: 400ms; }
+  .services-why-delay-500 { animation-delay: 500ms; }
+  .services-why-delay-600 { animation-delay: 600ms; }
+  .services-why-delay-700 { animation-delay: 700ms; }
+  .services-why-delay-800 { animation-delay: 800ms; }
+
+  .services-roadmap-reveal {
+    opacity: 0;
+    animation: servicesRoadmapFadeUp 650ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .services-roadmap-delay-100 { animation-delay: 100ms; }
+  .services-roadmap-delay-200 { animation-delay: 200ms; }
+  .services-roadmap-delay-300 { animation-delay: 300ms; }
+  .services-roadmap-delay-400 { animation-delay: 400ms; }
+  .services-roadmap-delay-500 { animation-delay: 500ms; }
+  .services-roadmap-delay-600 { animation-delay: 600ms; }
+
+  .services-cta-reveal {
+    opacity: 0;
+    animation: servicesCTAFadeUp 650ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .services-cta-delay-100 { animation-delay: 100ms; }
+  .services-cta-delay-200 { animation-delay: 200ms; }
+  .services-cta-delay-300 { animation-delay: 300ms; }
+
+  .services-audience-reveal {
+    opacity: 0;
+    animation: servicesAudienceFadeUp 650ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .services-audience-delay-100 { animation-delay: 100ms; }
+  .services-audience-delay-200 { animation-delay: 200ms; }
+  .services-audience-delay-300 { animation-delay: 300ms; }
+  .services-audience-delay-400 { animation-delay: 400ms; }
+  .services-audience-delay-500 { animation-delay: 500ms; }
+  .services-audience-delay-600 { animation-delay: 600ms; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .service-hero-reveal,
+    .service-hero-reveal-scale,
+    .services-overview-reveal,
+    .services-card-reveal,
+    .services-why-reveal,
+    .services-roadmap-reveal,
+    .services-cta-reveal,
+    .services-audience-reveal {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  }
+}
+
+@keyframes serviceHeroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes serviceHeroFadeScale {
+  from {
+    opacity: 0;
+    transform: scale(0.97) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes servicesOverviewFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Services Card Animations ── */
+@keyframes servicesCardFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Services Why Section Animations ── */
+@keyframes servicesWhyFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Services Roadmap Animations ── */
+@keyframes servicesRoadmapFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Services CTA Animations ── */
+@keyframes servicesCTAFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Services Audience Animations ── */
+@keyframes servicesAudienceFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Privacy Page Animations ── */
+@keyframes privacyFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.privacy-reveal {
+  opacity: 0;
+  animation: privacyFadeUp 650ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.privacy-delay-100 { animation-delay: 100ms; }
+.privacy-delay-200 { animation-delay: 200ms; }
+.privacy-delay-300 { animation-delay: 300ms; }
+.privacy-delay-400 { animation-delay: 400ms; }
+.privacy-delay-500 { animation-delay: 500ms; }
+
+/* ── Terms Page Animations ── */
+@keyframes termsFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.terms-reveal {
+  opacity: 0;
+  animation: termsFadeUp 650ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.terms-delay-100 { animation-delay: 100ms; }
+.terms-delay-200 { animation-delay: 200ms; }
+.terms-delay-300 { animation-delay: 300ms; }
+.terms-delay-400 { animation-delay: 400ms; }
+.terms-delay-500 { animation-delay: 500ms; }
+
+/* ── Animation Add-ons ── */
+@keyframes pageEnter {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page-transition {
+  animation: pageEnter 500ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+.btn-shine::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  z-index: 1;
+}
+.btn-shine:hover::before {
+  left: 150%;
+}
+.btn-shine > * {
+  position: relative;
+  z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-transition {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ── Video Background ── */
+.video-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -30;
+  overflow: hidden;
+  background: transparent;
+  pointer-events: none;
+}
+
+.video-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.65;
+  filter: sepia(0.25) saturate(0.9) hue-rotate(-10deg) brightness(1.1) contrast(0.9);
+}
+
+.video-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(232,117,26,0.16), transparent 35%),
+    radial-gradient(circle at 80% 50%, rgba(246,178,107,0.12), transparent 40%),
+    linear-gradient(180deg, rgba(251,246,237,0.05), rgba(251,246,237,0.15));
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .video-bg video {
+    opacity: 0.08;
+  }
+}
+
+/* ── New Navbar Animations (BluBridge Inspired) ── */
+.navbar-entrance {
+  animation: navFadeDown 700ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.logo-icon-entrance {
+  opacity: 0;
+  transform: scale(0.85);
+  animation: logoIconReveal 800ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.logo-wordmark-entrance {
+  opacity: 0;
+  transform: translateX(-10px);
+  animation: logoWordmarkReveal 800ms cubic-bezier(0.22, 1, 0.36, 1) 150ms forwards;
+}
+
+.nav-link-entrance {
+  opacity: 0;
+  transform: translateY(4px);
+  animation: navLinkFade 600ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes navFadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes logoIconReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes logoWordmarkReveal {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar-entrance,
+  .logo-icon-entrance,
+  .logo-wordmark-entrance,
+  .nav-link-entrance {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ── Orbit Animations (About Hero) ── */
+@keyframes orbit-spin-forward {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes orbit-spin-reverse {
+  from { transform: translate(-50%, -50%) rotate(360deg); }
+  to { transform: translate(-50%, -50%) rotate(0deg); }
+}
+
+/* Base Node Rotation (To counter the ring rotation so text stays upright) */
+@keyframes node-spin-reverse {
+  from { transform: translate(-50%, -50%) rotate(360deg); }
+  to { transform: translate(-50%, -50%) rotate(0deg); }
+}
+@keyframes node-spin-forward {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.animate-orbit-forward {
+  animation: orbit-spin-forward linear infinite;
+}
+
+.animate-orbit-reverse {
+  animation: orbit-spin-reverse linear infinite;
+}
+
+.animate-node-reverse {
+  animation: node-spin-reverse linear infinite;
+}
+
+.animate-node-forward {
+  animation: node-spin-forward linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-orbit-forward,
+  .animate-orbit-reverse,
+  .animate-node-reverse,
+  .animate-node-forward {
+    animation-play-state: paused !important;
+  }
+}
+
+/* ── Services Hero Workflow Animations ── */
+@keyframes workflow-travel-down {
+  0% { top: 0%; opacity: 0; }
+  5% { opacity: 1; }
+  95% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+@keyframes workflow-node-activate {
+  0% {
+    transform: scale(1) translateX(0);
+    border-color: rgba(232,117,26,0.14);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  }
+  5%, 15% {
+    transform: scale(1.05) translateX(4px);
+    border-color: rgba(232,117,26,0.4);
+    box-shadow: 0 4px 16px rgba(232,117,26,0.15);
+  }
+  20%, 100% {
+    transform: scale(1) translateX(0);
+    border-color: rgba(232,117,26,0.14);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  }
+}
+
+@keyframes workflow-text-activate {
+  0% { color: #5A6478; }
+  5%, 15% { color: #e8751a; }
+  20%, 100% { color: #5A6478; }
+}
+
+@keyframes workflow-icon-activate {
+  0% { background-color: #FCF6F0; }
+  5%, 15% { background-color: rgba(232,117,26,0.15); }
+  20%, 100% { background-color: #FCF6F0; }
+}
+
+.animate-workflow-dot {
+  animation: workflow-travel-down 9s linear infinite;
+}
+.animate-workflow-node {
+  animation: workflow-node-activate 9s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+.animate-workflow-text {
+  animation: workflow-text-activate 9s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+.animate-workflow-icon {
+  animation: workflow-icon-activate 9s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-workflow-dot {
+    display: none !important;
+  }
+  .animate-workflow-node,
+  .animate-workflow-text,
+  .animate-workflow-icon {
+    animation: none !important;
+  }
+}
+
+/* ── Services Hero Agent Cards Animations ── */
+@keyframes agent-card-entrance {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes agent-card-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-agent-entrance {
+  animation: agent-card-entrance 800ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+
+.animate-agent-float {
+  animation: agent-card-float 6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-agent-entrance {
+    animation-duration: 0.1s;
+  }
+  .animate-agent-float {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+/* ── Services Hero Orbit Animations ── */
+@keyframes services-orbit-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes services-orbit-counter-spin {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+.animate-orbit-spin {
+  animation: services-orbit-spin 36s linear infinite;
+}
+
+.animate-orbit-counter-spin {
+  animation: services-orbit-counter-spin 36s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-orbit-spin,
+  .animate-orbit-counter-spin {
+    animation-play-state: paused !important;
+  }
+}

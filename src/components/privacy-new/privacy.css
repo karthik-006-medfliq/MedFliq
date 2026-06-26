@@ -1,0 +1,43 @@
+@layer components {
+  /* Privacy New Typography Overrides (for inner HTML) */
+  .privacy-new-content .text-foreground {
+    color: #172033 !important;
+  }
+  .privacy-new-content .text-foreground\/80 {
+    color: #667085 !important;
+  }
+  .privacy-new-content .bg-accent\/20,
+  .privacy-new-content .bg-accent\/30 {
+    background-color: #fffaf2 !important;
+  }
+  .privacy-new-content .border-primary\/10 {
+    border-color: rgba(232,117,26,0.16) !important;
+  }
+  .privacy-new-content .text-primary {
+    color: #e8751a !important;
+  }
+  .privacy-new-content svg {
+    color: #e8751a !important;
+  }
+  .privacy-new-content p {
+    color: #667085;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+  }
+  .privacy-new-content ul {
+    margin-bottom: 1.25rem;
+  }
+  .privacy-new-content li {
+    margin-bottom: 0.5rem;
+  }
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(232,117,26,0.2);
+    border-radius: 4px;
+  }
+}
