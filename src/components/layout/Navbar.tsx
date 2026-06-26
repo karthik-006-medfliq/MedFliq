@@ -64,7 +64,7 @@ export default function Navbar() {
           'rounded-[24px] sm:rounded-[32px]',
           'px-4 sm:px-8 md:px-12 py-3 sm:py-4',
           scrolled
-            ? 'bg-[rgba(255,250,242,0.84)] backdrop-blur-[24px] border border-[rgba(255,255,255,0.40)] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),0_18px_50px_rgba(23,32,51,0.08)] supports-[backdrop-filter]:bg-[rgba(255,250,242,0.81)]'
+            ? 'bg-white/[0.70] backdrop-blur-xl backdrop-saturate-150 shadow-[0_8px_32px_rgba(0,0,0,0.04)] border border-white/60'
             : 'bg-transparent border border-transparent shadow-none',
         ].join(' ')}
       >
