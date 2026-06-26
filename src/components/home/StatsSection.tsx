@@ -75,10 +75,10 @@ export default function StatsSection() {
         <div className="absolute inset-0 bg-med-primary/10 blur-3xl rounded-[40px] md:rounded-[80px] -z-10 translate-y-4 scale-[0.98] transition-all duration-700 group-hover:bg-med-primary/15 group-hover:scale-100" />
         
         {/* Main Glass Container */}
-        <div className="bg-white/70 backdrop-blur-xl border border-white/60 rounded-[40px] md:rounded-[80px] shadow-[0_30px_90px_rgba(44,35,25,0.10)] px-6 py-12 sm:py-16 lg:py-20 relative z-10 transition-transform duration-700 group-hover:-translate-y-2 group-hover:shadow-[0_40px_100px_rgba(44,35,25,0.15)]">
+        <div className="bg-white/70 backdrop-blur-xl border border-white/60 rounded-[40px] md:rounded-[80px] shadow-[0_30px_90px_rgba(44,35,25,0.10)] px-6 py-8 sm:py-16 lg:py-20 relative z-10 transition-transform duration-700 group-hover:-translate-y-2 group-hover:shadow-[0_40px_100px_rgba(44,35,25,0.15)]">
         
         {/* Container for the 4 items with partial vertical dividers on desktop */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-0">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-0">
           {stats.map((stat, i) => (
             <div 
               key={i} 

@@ -11,7 +11,7 @@ export default function StatCard({ title, labelLine1, labelLine2, icon }: StatCa
   return (
     <div className="group/item flex flex-col items-center text-center cursor-default">
       {/* Icon Card */}
-      <div className="w-14 h-14 bg-[#FCF6F0] border border-white/80 rounded-[16px] flex items-center justify-center mb-6 shadow-sm transition-all duration-500 group-hover/item:-translate-y-[6px] group-hover/item:shadow-md group-hover/item:bg-white">
+      <div className="w-14 h-14 bg-[#FCF6F0] border border-white/80 rounded-[16px] flex items-center justify-center mb-3 md:mb-6 shadow-sm transition-all duration-500 group-hover/item:-translate-y-[6px] group-hover/item:shadow-md group-hover/item:bg-white">
         {icon}
       </div>
       
