@@ -22,29 +22,18 @@ export default function ServicesAudienceSection() {
             </p>
           </div>
 
+
+
           {/* Right Column: CardSwap (Desktop) */}
-          <div className="hidden lg:block relative h-[560px] w-full mt-10">
+          <div className="hidden lg:block relative h-[560px] w-full -mt-4">
             <ServicesAudienceCardSwap />
           </div>
 
-          {/* Right Column: Stacked Cards (Mobile / Tablet Fallback) */}
-          <div className="flex lg:hidden flex-col gap-6 w-full mt-6">
-            {audienceCardsData.map((card, index) => (
-              <div 
-                key={index}
-                className="bg-white/95 backdrop-blur-md rounded-[32px] sm:rounded-[40px] p-8 border border-white/80 shadow-[0_4px_24px_rgba(0,0,0,0.04)] flex flex-col w-full"
-              >
-                <div className="w-14 h-14 rounded-full flex items-center justify-center bg-white shadow-sm border border-gray-100 mb-6">
-                  {card.icon}
-                </div>
-                <h3 className="text-[20px] font-black text-med-ink leading-snug mb-4">
-                  {card.title}
-                </h3>
-                <p className="text-[16px] text-med-slate font-medium leading-relaxed">
-                  {card.description}
-                </p>
-              </div>
-            ))}
+          {/* Right Column: Card Swap Animation (Mobile Fallback) */}
+          <div className="flex lg:hidden justify-center w-full mt-32 ml-8">
+            <div className="scale-[0.70] sm:scale-[0.85] origin-top mb-0">
+              <ServicesAudienceCardSwap />
+            </div>
           </div>
 
         </div>

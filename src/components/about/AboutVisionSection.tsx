@@ -115,7 +115,7 @@ export default function AboutVisionSection() {
           {VISION_CARDS.map((card, idx) => (
             <div key={idx} className="h-full">
               <div 
-                className={`h-full flex flex-col bg-white/90 backdrop-blur-md rounded-[36px] p-9 lg:p-10 border border-white shadow-[0_16px_40px_rgba(44,35,25,0.03)] transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1.5 hover:border-med-primary/30 hover:shadow-[0_20px_40px_rgba(224,123,42,0.12)] min-h-[260px] ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
+                className={`h-full flex flex-col bg-white/90 backdrop-blur-md rounded-[28px] md:rounded-[36px] p-6 md:p-9 lg:p-10 border border-white shadow-[0_16px_40px_rgba(44,35,25,0.03)] transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1.5 hover:border-med-primary/30 hover:shadow-[0_20px_40px_rgba(224,123,42,0.12)] min-h-[200px] md:min-h-[260px] ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
                 style={{ transitionDelay: `${150 + (idx * 50)}ms` }}
               >
                 <h3 className={`text-[19px] md:text-[21px] font-black mb-3 ${card.highlight ? 'text-med-primary' : 'text-med-ink'}`}>

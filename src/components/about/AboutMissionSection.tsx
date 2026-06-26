@@ -108,11 +108,11 @@ export default function AboutMissionSection() {
           {MISSION_CARDS.map((card, idx) => (
             <div 
               key={idx}
-              className={`group flex flex-col bg-white/90 backdrop-blur-md rounded-[28px] md:rounded-[36px] p-8 border border-white shadow-[0_16px_40px_rgba(44,35,25,0.03)] transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1.5 hover:border-med-primary/30 hover:shadow-[0_20px_40px_rgba(224,123,42,0.12)] ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}
+              className={`group flex flex-col bg-white/90 backdrop-blur-md rounded-[28px] md:rounded-[36px] p-6 md:p-8 border border-white shadow-[0_16px_40px_rgba(44,35,25,0.03)] transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1.5 hover:border-med-primary/30 hover:shadow-[0_20px_40px_rgba(224,123,42,0.12)] ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}
               style={{ transitionDelay: `${150 + (idx * 50)}ms` }}
             >
               {/* Icon Bubble */}
-              <div className="w-14 h-14 rounded-full bg-orange-50 text-med-primary flex items-center justify-center mb-8 transition-all duration-300 group-hover:scale-110 group-hover:bg-med-primary group-hover:text-white group-hover:shadow-[0_8px_24px_rgba(224,123,42,0.35)]">
+              <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-orange-50 text-med-primary flex items-center justify-center mb-5 md:mb-8 transition-all duration-300 group-hover:scale-110 group-hover:bg-med-primary group-hover:text-white group-hover:shadow-[0_8px_24px_rgba(224,123,42,0.35)]">
                 {card.icon}
               </div>
 

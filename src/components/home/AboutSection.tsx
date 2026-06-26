@@ -39,9 +39,10 @@ export default function AboutSection() {
           </div>
           
           {/* Heading */}
-          <h2 className={`text-4xl sm:text-5xl lg:text-[56px] font-black leading-[1.1] text-med-ink tracking-tight mb-8 transition-all duration-700 ease-out delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            The Operating System<br className="hidden lg:block" />
-            For <br className="hidden sm:block lg:hidden" />
+          <h2 className={`text-[32px] sm:text-5xl lg:text-[56px] font-black leading-[1.1] text-med-ink tracking-tight mb-8 transition-all duration-700 ease-out delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            The Operating System{' '}
+            <br className="hidden lg:block" />
+            For <br className="block lg:hidden" />
             <span className="text-med-primary">Modern Healthcare.</span>
           </h2>
           

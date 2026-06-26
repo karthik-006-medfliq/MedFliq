@@ -90,21 +90,21 @@ export default function AboutRoadmapSection() {
           {ROADMAP_PHASES.map((phase, idx) => (
             <div 
               key={idx}
-              className={`group flex flex-col items-center text-center bg-white/90 backdrop-blur-md rounded-[36px] md:rounded-[48px] p-8 lg:p-12 border border-white shadow-[0_8px_24px_rgba(44,35,25,0.03)] transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-[5px] hover:border-[#e8751a]/20 hover:shadow-[0_18px_45px_rgba(232,117,26,0.10)] hover:bg-white/90 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
+              className={`group flex flex-col items-center text-center bg-white/90 backdrop-blur-md rounded-[36px] md:rounded-[48px] p-6 md:p-8 lg:p-12 border border-white shadow-[0_8px_24px_rgba(44,35,25,0.03)] transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-[5px] hover:border-[#e8751a]/20 hover:shadow-[0_18px_45px_rgba(232,117,26,0.10)] hover:bg-white/90 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
               style={{ transitionDelay: `${150 + (idx * 50)}ms` }}
             >
               {/* Phase Pill */}
-              <div className="bg-med-primary text-white rounded-full px-5 py-1.5 text-[11px] lg:text-xs font-black uppercase tracking-wider mb-8 transition-all duration-300 shadow-[0_4px_12px_rgba(224,123,42,0.2)] group-hover:shadow-[0_6px_16px_rgba(224,123,42,0.3)]">
+              <div className="bg-med-primary text-white rounded-full px-5 py-1.5 text-[11px] lg:text-xs font-black uppercase tracking-wider mb-5 md:mb-8 transition-all duration-300 shadow-[0_4px_12px_rgba(224,123,42,0.2)] group-hover:shadow-[0_6px_16px_rgba(224,123,42,0.3)]">
                 {phase.phase}
               </div>
 
               {/* Title */}
-              <h3 className="text-[17px] md:text-[19px] lg:text-[21px] font-black text-med-ink leading-[1.4] mb-8 max-w-[240px]">
+              <h3 className="text-[17px] md:text-[19px] lg:text-[21px] font-black text-med-ink leading-[1.4] mb-6 md:mb-8 max-w-[240px]">
                 {phase.title}
               </h3>
 
               {/* Icon Bubble */}
-              <div className="mt-auto w-14 h-14 rounded-full bg-orange-50/50 border border-orange-100/50 text-med-primary flex items-center justify-center transition-all duration-300 group-hover:shadow-[0_0_20px_rgba(224,123,42,0.15)]">
+              <div className="mt-auto w-12 h-12 md:w-14 md:h-14 rounded-full bg-orange-50/50 border border-orange-100/50 text-med-primary flex items-center justify-center transition-all duration-300 group-hover:shadow-[0_0_20px_rgba(224,123,42,0.15)]">
                 {phase.icon}
               </div>
             </div>

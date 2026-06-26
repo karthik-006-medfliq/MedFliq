@@ -1,6 +1,6 @@
 export default function ServicesHeroOrbit() {
   const allCards = [
-    { id: 1, title: 'Patient Safety', icon: '🛡️', angle: 0 },
+    { id: 1, title: 'Patient Safety', icon: <><span className="hidden lg:inline">🛡️</span><span className="lg:hidden">🩺</span></>, angle: 0 },
     { id: 4, title: 'Unified EHR', icon: '🏥', angle: 60 },
     { id: 2, title: 'Smart Docs', icon: '📝', angle: 120 },
     { id: 5, title: 'Hospital Intelligence', icon: '📊', angle: 180 },
@@ -10,7 +10,7 @@ export default function ServicesHeroOrbit() {
 
   const orbitRadius = 150; // Orbit Diameter: 300px
 
-  const renderCard = (card: { id: number, title: string, icon: string, angle: number }, radius: number) => {
+  const renderCard = (card: { id: number, title: string, icon: React.ReactNode, angle: number }, radius: number) => {
     return (
       <div 
         key={card.id}
@@ -39,10 +39,10 @@ export default function ServicesHeroOrbit() {
   }
 
   return (
-    <div className="relative w-full max-w-[500px] mx-auto mt-12 lg:mt-0 opacity-0 animate-fade-in" style={{ animationFillMode: 'forwards' }}>
+    <div className="relative w-full max-w-[500px] mx-auto lg:mt-0 opacity-0 animate-fade-in" style={{ animationFillMode: 'forwards' }}>
       
-      {/* ── Desktop Orbit (Hidden on mobile) ── */}
-      <div className="hidden lg:flex relative w-[300px] h-[300px] mx-auto items-center justify-center">
+      {/* ── Orbit Animation (All Screens) ── */}
+      <div className="flex relative w-[300px] h-[300px] mx-auto items-center justify-center scale-[0.80] sm:scale-[0.90] lg:scale-100 -my-8 lg:my-0 origin-center">
         
         {/* Glow Backdrop */}
         <div className="absolute inset-0 bg-med-primary/5 blur-[80px] rounded-full scale-110 -z-10 translate-y-8 pointer-events-none"></div>
@@ -61,20 +61,6 @@ export default function ServicesHeroOrbit() {
           {allCards.map(c => renderCard(c, orbitRadius))}
 
         </div>
-      </div>
-
-      {/* ── Mobile Fallback (Grid) ── */}
-      <div className="grid lg:hidden grid-cols-2 sm:grid-cols-3 gap-4 max-w-[480px] mx-auto">
-        {[...allCards].sort((a, b) => a.id - b.id).map((card) => (
-          <div key={card.id} className="w-full bg-[#fffaf2]/90 backdrop-blur-xl rounded-[20px] border border-med-primary/15 shadow-sm flex flex-col items-center justify-center p-4">
-            <div className="w-10 h-10 rounded-full bg-med-primary/10 flex items-center justify-center text-[22px] mb-3">
-              {card.icon}
-            </div>
-            <h3 className="text-center text-[12px] font-bold text-med-ink leading-tight">
-              {card.title}
-            </h3>
-          </div>
-        ))}
       </div>
 
     </div>

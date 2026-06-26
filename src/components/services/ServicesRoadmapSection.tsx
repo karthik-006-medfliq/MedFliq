@@ -62,7 +62,7 @@ export default function ServicesRoadmapSection() {
           {cards.map((card, index) => (
             <div 
               key={index}
-              className={`services-roadmap-reveal ${card.delay} relative overflow-hidden bg-white/60 backdrop-blur-md rounded-[32px] sm:rounded-[40px] p-8 lg:p-10 border border-white/80 shadow-[0_4px_24px_rgba(0,0,0,0.04)] flex flex-col justify-center items-center group hover:-translate-y-1.5 transition-all duration-500 hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] hover:border-med-primary/30 min-h-[280px]`}
+              className={`services-roadmap-reveal ${card.delay} relative overflow-hidden bg-white/60 backdrop-blur-md rounded-[28px] sm:rounded-[40px] p-6 md:p-8 lg:p-10 border border-white/80 shadow-[0_4px_24px_rgba(0,0,0,0.04)] flex flex-col justify-center items-center group hover:-translate-y-1.5 transition-all duration-500 hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] hover:border-med-primary/30 min-h-[160px] md:min-h-[280px]`}
             >
               {/* Massive Faded Number Background */}
               <div className="absolute top-4 right-6 text-[80px] lg:text-[100px] font-black text-slate-900/[0.03] select-none leading-none z-0">
@@ -71,7 +71,7 @@ export default function ServicesRoadmapSection() {
 
               {/* Card Content */}
               <div className="relative z-10 flex flex-col items-center text-center">
-                <div className="mb-6 flex items-center justify-center">
+                <div className="mb-4 md:mb-6 flex items-center justify-center">
                   {card.icon}
                 </div>
                 <h3 className="text-[18px] lg:text-[20px] font-black text-med-ink leading-snug max-w-[200px]">

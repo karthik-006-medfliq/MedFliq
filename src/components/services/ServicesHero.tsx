@@ -31,7 +31,7 @@ export default function ServicesHero() {
             </h1>
 
             {/* Paragraph */}
-            <p className="text-[12px] sm:text-[13px] lg:text-[14px] text-med-slate font-medium leading-relaxed mb-8 max-w-[440px] service-hero-reveal service-hero-delay-2">
+            <p className="text-[15px] sm:text-[16px] lg:text-[14px] text-med-slate font-medium leading-relaxed mb-8 max-w-[440px] service-hero-reveal service-hero-delay-2">
               MedFliq delivers AI-native healthcare solutions that actively assist clinical teams, streamline hospital operations, and unify fragmented healthcare systems into one connected intelligence ecosystem.
             </p>
 
@@ -46,7 +46,7 @@ export default function ServicesHero() {
                     <circle cx="12" cy="12" r="10"></circle>
                     <path d="m9 12 2 2 4-4"></path>
                   </svg>
-                  <span className="text-[12px] sm:text-[13px] font-bold text-med-ink">{item}</span>
+                  <span className="text-[14px] lg:text-[13px] font-bold text-med-ink">{item}</span>
                 </li>
               ))}
             </ul>
