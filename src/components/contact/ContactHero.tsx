@@ -45,7 +45,7 @@ export default function ContactHero() {
 
           {/* Heading */}
           <h1 
-            className={`text-5xl sm:text-6xl md:text-[60px] lg:text-[64px] xl:text-[70px] font-black text-med-ink leading-[1] tracking-tight mb-8 transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+            className={`text-[38px] sm:text-5xl md:text-[60px] lg:text-[64px] xl:text-[70px] font-black text-med-ink leading-[1] tracking-tight mb-8 transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
             style={{ transitionDelay: '300ms' }}
           >
             Building the Future of <br />
