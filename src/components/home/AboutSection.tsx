@@ -29,7 +29,7 @@ export default function AboutSection() {
 
   return (
     <section id="about" ref={sectionRef} className="relative w-full px-4 sm:px-6 md:px-12 py-16 lg:py-20 z-10 overflow-hidden">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-0 lg:gap-20 items-center">
         
         {/* Left Column — Text & Checklist */}
         <div className="flex flex-col relative z-20">
@@ -76,8 +76,8 @@ export default function AboutSection() {
         </div>
 
         {/* Right Column — Cards/Gallery */}
-        <div className={`relative transition-all duration-1000 ease-out h-[400px] lg:h-[480px] w-full ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`} style={{ transitionDelay: '200ms' }}>
-          <div className="relative w-full h-full flex justify-center lg:justify-end">
+        <div className={`relative transition-all duration-1000 ease-out h-[300px] md:h-[400px] lg:h-[480px] w-full -mt-16 lg:mt-0 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`} style={{ transitionDelay: '200ms' }}>
+          <div className="relative w-full h-full flex justify-center lg:justify-end -ml-[120px] md:ml-0">
             <AboutFeatureCardSwap />
           </div>
         </div>
