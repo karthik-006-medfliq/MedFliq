@@ -1,4 +1,4 @@
-import ServicesAudienceCardSwap, { audienceCardsData } from './ServicesAudienceCardSwap'
+import ServicesAudienceCardSwap from './ServicesAudienceCardSwap'
 
 export default function ServicesAudienceSection() {
   return (
