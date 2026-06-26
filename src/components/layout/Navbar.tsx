@@ -200,7 +200,7 @@ export default function Navbar() {
               key={label}
               to={href}
               onClick={() => setMenuOpen(false)}
-              className={({ isActive }) => `text-2xl font-bold transition-colors duration-200 ${isActive ? 'text-med-primary' : 'text-med-ink hover:text-med-primary'}`}
+              className={({ isActive }) => `text-lg text-center font-bold transition-colors duration-200 ${isActive ? 'text-med-primary' : 'text-med-ink hover:text-med-primary'}`}
             >
               {label}
             </NavLink>
