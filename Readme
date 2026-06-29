@@ -1,0 +1,254 @@
+# MedFliq
+
+MedFliq is an AI-native healthcare intelligence platform website built to present healthcare automation, smart medical documentation, workflow intelligence, and contact support through a modern responsive web interface.
+
+## Project Overview
+
+This project includes a responsive frontend landing website with multiple pages, smooth animations, reusable UI components, and a backend-powered contact form. The contact form is connected to a FastAPI backend and can be integrated with Google Sheets for storing user submissions.
+
+## Tech Stack
+
+### Frontend
+
+* React
+* Vite
+* TypeScript
+* Tailwind CSS
+* React Router
+* Framer Motion / CSS Animations
+
+### Backend
+
+* FastAPI
+* Python
+* Google Sheets API
+* Environment-based configuration
+
+### Deployment
+
+* Frontend: Vercel
+* Backend: Render
+* Version Control: GitHub
+
+## Pages
+
+* Home
+* About
+* Services
+* Contact
+* Privacy Policy
+* Terms and Conditions
+
+## Features
+
+* Modern responsive UI
+* BluBridge-inspired translucent navbar
+* Smooth page transitions
+* Reusable components
+* Contact form integration
+* Google Sheets contact data storage
+* SEO-friendly page structure
+* Privacy and Terms pages
+* Deployment-ready frontend configuration
+* Environment variable based API connection
+
+## Folder Structure
+
+```text
+medfliq/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── routes/
+│   ├── styles/
+│   ├── App.tsx
+│   └── main.tsx
+├── backend/
+│   ├── main.py
+│   ├── requirements.txt
+│   └── .env.example
+├── package.json
+├── vite.config.ts
+├── vercel.json
+└── README.md
+```
+
+## Frontend Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/your-repository-name.git
+cd your-repository-name
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Create environment file
+
+Create a `.env` file in the frontend root:
+
+```env
+VITE_API_URL=https://your-backend-url.onrender.com
+VITE_RECAPTCHA_SITE_KEY=your_recaptcha_site_key
+```
+
+### 4. Run development server
+
+```bash
+npm run dev
+```
+
+### 5. Build frontend
+
+```bash
+npm run build
+```
+
+### 6. Preview production build
+
+```bash
+npm run preview
+```
+
+## Backend Setup
+
+### 1. Move to backend folder
+
+```bash
+cd backend
+```
+
+### 2. Create virtual environment
+
+```bash
+python -m venv venv
+```
+
+### 3. Activate virtual environment
+
+For Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+For macOS/Linux:
+
+```bash
+source venv/bin/activate
+```
+
+### 4. Install backend dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Create backend environment file
+
+Create a `.env` file inside the backend folder:
+
+```env
+GOOGLE_SERVICE_ACCOUNT_EMAIL=your_service_account_email
+GOOGLE_PRIVATE_KEY=your_private_key
+GOOGLE_SHEET_ID=your_google_sheet_id
+GOOGLE_SHEET_NAME=ContactSubmissions
+FRONTEND_URL=https://your-frontend-url.vercel.app
+RECAPTCHA_SECRET_KEY=your_recaptcha_secret_key
+```
+
+### 6. Run backend server
+
+```bash
+uvicorn main:app --reload
+```
+
+## Deployment
+
+### Frontend Deployment on Vercel
+
+Use these settings:
+
+```text
+Framework Preset: Vite
+Install Command: npm install
+Build Command: npm run build
+Output Directory: dist
+```
+
+Environment variables in Vercel:
+
+```env
+VITE_API_URL=https://your-backend-url.onrender.com
+VITE_RECAPTCHA_SITE_KEY=your_recaptcha_site_key
+```
+
+### Backend Deployment on Render
+
+Use these settings:
+
+```text
+Service Type: Web Service
+Environment: Python
+Build Command: pip install -r requirements.txt
+Start Command: uvicorn main:app --host 0.0.0.0 --port $PORT
+```
+
+Environment variables in Render:
+
+```env
+GOOGLE_SERVICE_ACCOUNT_EMAIL=your_service_account_email
+GOOGLE_PRIVATE_KEY=your_private_key
+GOOGLE_SHEET_ID=your_google_sheet_id
+GOOGLE_SHEET_NAME=ContactSubmissions
+FRONTEND_URL=https://your-frontend-url.vercel.app
+RECAPTCHA_SECRET_KEY=your_recaptcha_secret_key
+```
+
+## Git Branch Workflow
+
+The deployment branch is:
+
+```text
+dev-main
+```
+
+Use this branch for production deployment updates.
+
+```bash
+git checkout dev-main
+git add .
+git commit -m "Update project"
+git push origin dev-main
+```
+
+## Security Notes
+
+* Do not commit `.env` files.
+* Do not expose backend secrets in frontend.
+* Only variables starting with `VITE_` should be used in the frontend.
+* Keep Google service account credentials only in the backend.
+* Keep reCAPTCHA secret key only in the backend.
+* Use CORS to allow only trusted frontend domains.
+
+## Contact Form Flow
+
+```text
+User fills Contact Form
+        ↓
+Frontend sends data with reCAPTCHA token
+        ↓
+FastAPI backend verifies reCAPTCHA
+        ↓
+Backend stores valid data in Google Sheets
+        ↓
+Success response is sent to frontend
+```
+
