@@ -3,6 +3,7 @@ import datetime
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, EmailStr, Field
 import gspread
+import requests
 from google.oauth2.service_account import Credentials
 from dotenv import load_dotenv
 
@@ -28,6 +29,7 @@ class ContactFormSubmit(BaseModel):
     email: EmailStr = Field(..., description="A valid email address is required")
     subject: str
     message: str = Field(..., min_length=1, description="Message cannot be empty")
+    recaptchaToken: str = Field(..., description="reCAPTCHA token is required")
 
 def get_google_sheet():
     try:
@@ -75,6 +77,19 @@ def get_google_sheet():
 @app.post("/api/contact")
 async def submit_contact_form(data: ContactFormSubmit):
     try:
+        # Verify reCAPTCHA
+        recaptcha_secret = os.getenv("RECAPTCHA_SECRET_KEY")
+        if recaptcha_secret:
+            verify_url = "https://www.google.com/recaptcha/api/siteverify"
+            payload = {
+                "secret": recaptcha_secret,
+                "response": data.recaptchaToken
+            }
+            response = requests.post(verify_url, data=payload)
+            result = response.json()
+            if not result.get("success"):
+                raise HTTPException(status_code=400, detail="reCAPTCHA verification failed. Please try again.")
+
         sheet = get_google_sheet()
         if not sheet:
             # If the backend is not configured correctly, return a 500 error

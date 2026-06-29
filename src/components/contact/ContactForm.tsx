@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import ReCAPTCHA from 'react-google-recaptcha'
 
 interface ContactFormProps {
   isVisible: boolean
@@ -10,8 +11,10 @@ export default function ContactForm({ isVisible }: ContactFormProps) {
     lastName: '',
     email: '',
     subject: '',
-    message: ''
+    message: '',
+    recaptchaToken: ''
   })
+  const recaptchaRef = useRef<ReCAPTCHA>(null)
   
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
   const [errorMessage, setErrorMessage] = useState('')
@@ -25,6 +28,12 @@ export default function ContactForm({ isVisible }: ContactFormProps) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    if (!formData.recaptchaToken) {
+      setErrorMessage('Please complete the reCAPTCHA to continue.')
+      setStatus('error')
+      return
+    }
+    
     setStatus('submitting')
     setErrorMessage('')
     
@@ -49,8 +58,12 @@ export default function ContactForm({ isVisible }: ContactFormProps) {
         lastName: '',
         email: '',
         subject: '',
-        message: ''
+        message: '',
+        recaptchaToken: ''
       })
+      if (recaptchaRef.current) {
+        recaptchaRef.current.reset()
+      }
       
       // Reset back to idle after a few seconds
       setTimeout(() => {
@@ -185,6 +198,24 @@ export default function ContactForm({ isVisible }: ContactFormProps) {
           required
           className={`${inputStyles} resize-none h-[140px] rounded-[28px]`}
         ></textarea>
+      </div>
+
+      {/* reCAPTCHA Widget */}
+      <div 
+        className={`pt-2 transition-all duration-700 ease-out flex justify-center ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
+        style={{ transitionDelay: '650ms' }}
+      >
+        {import.meta.env.VITE_RECAPTCHA_SITE_KEY ? (
+          <ReCAPTCHA
+            ref={recaptchaRef}
+            sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+            onChange={(token) => setFormData(prev => ({ ...prev, recaptchaToken: token || '' }))}
+          />
+        ) : (
+          <div className="text-red-600 text-[13px] font-medium bg-red-50 border border-red-200 rounded-xl px-4 py-3 text-center w-full">
+            ⚠️ reCAPTCHA Site Key is missing. Please add VITE_RECAPTCHA_SITE_KEY to your .env file.
+          </div>
+        )}
       </div>
 
       {/* Submit Button */}
