@@ -2,9 +2,9 @@ import ServicesHeroOrbit from './ServicesHeroOrbit'
 
 export default function ServicesHero() {
   const checkList = [
-    'AI-assisted clinical reasoning',
-    'Automated medical documentation',
-    'Hospital workflow automation',
+    'Seamless appointment scheduling',
+    'Complete patient record management',
+    'Automated clinic operations',
   ]
 
   return (
@@ -24,15 +24,14 @@ export default function ServicesHero() {
 
             {/* Heading */}
             <h1 className="text-[34px] sm:text-[43px] lg:text-[53px] xl:text-[58px] font-black text-med-ink leading-[1.05] tracking-tight mb-6 service-hero-reveal service-hero-delay-1">
-              Intelligent Healthcare <br className="hidden lg:block" />
-              Infrastructure <br className="hidden lg:block" />
-              <span className="text-med-primary italic pr-2">Designed For Modern</span> <br className="hidden lg:block" />
-              <span className="text-med-primary italic">Hospitals.</span>
+              Clinic‑Centric Services <br className="hidden lg:block" />
+              Built for Modern <br className="hidden lg:block" />
+              <span className="text-med-primary italic">Practices.</span>
             </h1>
 
             {/* Paragraph */}
             <p className="text-[15px] sm:text-[16px] lg:text-[14px] text-med-slate font-medium leading-relaxed mb-8 max-w-[440px] service-hero-reveal service-hero-delay-2">
-              MedFliq delivers AI-native healthcare solutions that actively assist clinical teams, streamline hospital operations, and unify fragmented healthcare systems into one connected intelligence ecosystem.
+               Running a clinic means juggling appointments, records, billing, and follow‑ups. MedFliq unifies every essential workflow into one secure platform, so your team can focus on patient care instead of juggling tools.
             </p>
 
             {/* Checklist */}

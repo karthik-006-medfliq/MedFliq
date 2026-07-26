@@ -6,9 +6,8 @@ export const audienceCardsData = [
     description: "AI-assisted clinical intelligence that supports faster and more informed medical decisions.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-med-primary transition-transform duration-300 group-hover:scale-110">
-        <path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/>
-        <path d="M8 15v8"/>
-        <path d="M16 2v6a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1"/>
+        <circle cx="12" cy="8" r="5"/>
+        <path d="M20 21a8 8 0 0 0-16 0"/>
       </svg>
     )
   },
@@ -26,7 +25,7 @@ export const audienceCardsData = [
   },
   {
     title: "Laboratories & Diagnostic Teams",
-    description: "Connected diagnostics and streamlined information flow across hospital systems.",
+    description: "Connected diagnostics and streamlined information flow across clinic systems.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-med-primary transition-transform duration-300 group-hover:scale-110">
         <path d="M10 2v7.31"/>
@@ -38,7 +37,7 @@ export const audienceCardsData = [
     )
   },
   {
-    title: "Hospital Administration",
+    title: "Clinic Administration",
     description: "Centralized visibility, operational intelligence, and scalable workflow management.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-med-primary transition-transform duration-300 group-hover:scale-110">

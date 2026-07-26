@@ -10,15 +10,15 @@ export default function ServicesAudienceSection() {
           {/* Left Column: Text */}
           <div className="flex flex-col max-w-xl">
             <h4 className="text-[11px] sm:text-[12px] font-bold text-med-primary uppercase tracking-[0.2em] mb-4">
-              WHO WE SERVE
+                WHO BENEFITS
             </h4>
             
             <h2 className="text-[42px] sm:text-[48px] lg:text-[56px] font-black text-med-ink leading-tight mb-6">
-              Designed For Every Layer Of Modern Healthcare
+                Tailored for Clinics, Doctors, and Patients
             </h2>
 
             <p className="text-med-slate text-base md:text-lg leading-relaxed font-medium max-w-md">
-              MedFliq’s ecosystem is custom-built to support the distinct needs of every healthcare professional from frontline clinicians to administrative leaders ensuring seamless collaboration and improved patient outcomes across the entire organization.
+                Our platform is crafted for independent clinics, helping doctors streamline appointments, keep patient records organized, and empower staff to deliver better care efficiently.
             </p>
           </div>
 

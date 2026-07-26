@@ -1,10 +1,10 @@
 export default function ServicesWhySection() {
   const pills = [
-    { text: "AI-native healthcare infrastructure", delay: "services-why-delay-400" },
-    { text: "End-to-end hospital ecosystem", delay: "services-why-delay-500" },
-    { text: "Proactive operational assistance", delay: "services-why-delay-600" },
-    { text: "Unified clinical coordination", delay: "services-why-delay-700" },
-    { text: "Intelligent automation at scale", delay: "services-why-delay-800" },
+    { text: "Faster appointment handling", delay: "services-why-delay-400" },
+    { text: "Organized patient records", delay: "services-why-delay-500" },
+    { text: "Less administrative burden", delay: "services-why-delay-600" },
+    { text: "Better staff collaboration", delay: "services-why-delay-700" },
+    { text: "Scalable as your clinic grows", delay: "services-why-delay-800" }
   ]
 
   return (
@@ -15,25 +15,20 @@ export default function ServicesWhySection() {
           {/* Left Column: Text Content */}
           <div className="flex flex-col">
             <h4 className="services-why-reveal services-why-delay-100 text-[11px] sm:text-[12px] font-bold text-med-primary uppercase tracking-[0.2em] mb-6">
-              WHY MEDFLIQ
+              PARTNERED WITH CLINICAL TEAMS
             </h4>
             
             <h2 className="services-why-reveal services-why-delay-200 text-[36px] sm:text-[48px] lg:text-[54px] font-black text-med-ink leading-[1.1] tracking-tight mb-8">
-              From Passive Systems<br />
-              To Active Healthcare<br />
-              Intelligence
+              Technology Tailored <br />
+              to How Clinics Work
             </h2>
 
             <p className="services-why-reveal services-why-delay-300 text-[16px] sm:text-[17px] text-med-slate font-medium leading-relaxed mb-6">
-              Traditional healthcare systems are designed to store information. MedFliq is designed to assist action.
+              Every clinic has its own workflow, patient mix, and staffing model. MedFliq adapts to those realities instead of forcing a one‑size‑fits‑all solution, so your team can keep doing what they do best.
             </p>
 
             <p className="services-why-reveal services-why-delay-300 text-[16px] sm:text-[17px] text-med-slate font-medium leading-relaxed mb-6">
-              Our services are built around agentic healthcare intelligence where AI systems continuously support clinical reasoning, automate workflows, and coordinate operations across the hospital ecosystem in real time.
-            </p>
-
-            <p className="services-why-reveal services-why-delay-300 text-[16px] sm:text-[17px] text-med-slate font-medium leading-relaxed">
-              Instead of forcing healthcare professionals to navigate disconnected platforms, MedFliq delivers unified intelligence directly into their workflow.
+              From solo practices to multi‑location groups, our platform streams daily operations, reduces admin overhead, and helps deliver consistent, high‑quality care across the entire practice.
             </p>
           </div>
 

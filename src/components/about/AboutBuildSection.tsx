@@ -1,14 +1,14 @@
 import { useEffect, useRef, useState } from 'react'
 
 const BUILD_FEATURES = [
-  { id: 1, title: 'AI-assisted clinical reasoning', active: false },
-  { id: 2, title: 'Intelligent patient timelines & summaries', active: false },
-  { id: 3, title: 'Automated medical documentation', active: false },
-  { id: 4, title: 'Drug interaction & safety monitoring', active: false },
-  { id: 5, title: 'Real-time decision support', active: false },
-  { id: 6, title: 'Workflow automation across departments', active: false },
-  { id: 7, title: 'Multi-role hospital coordination', active: false },
-  { id: 8, title: 'Unified EHR & operational intelligence', active: false },
+  { id: 1, title: 'Effortless appointment scheduling', active: false },
+  { id: 2, title: 'Unified patient records', active: false },
+  { id: 3, title: 'Streamlined billing & invoicing', active: false },
+  { id: 4, title: 'Automated follow-up tracking', active: false },
+  { id: 5, title: 'Optimized staff shift coordination', active: false },
+  { id: 6, title: 'Seamless multi-clinic operations', active: false },
+  { id: 7, title: 'HIPAA-compliant data security', active: false },
+  { id: 8, title: 'All-in-one practice management', active: false },
 ]
 
 export default function AboutBuildSection() {
@@ -51,7 +51,7 @@ export default function AboutBuildSection() {
               className={`text-[11px] sm:text-xs font-bold text-med-primary uppercase tracking-[0.2em] mb-6 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
               style={{ transitionDelay: '50ms' }}
             >
-              WHAT WE BUILD
+              OUR CLINIC IMPACT
             </span>
 
             {/* Heading */}
@@ -59,7 +59,7 @@ export default function AboutBuildSection() {
               className={`text-3xl md:text-4xl lg:text-[40px] font-black text-med-ink leading-[1.1] tracking-tight mb-8 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
               style={{ transitionDelay: '100ms' }}
             >
-              Fliq 360 — The AI-Native Hospital Operating System
+              Helping Clinics Work Smarter Every Day
             </h2>
 
             {/* Paragraphs */}
@@ -68,10 +68,10 @@ export default function AboutBuildSection() {
               style={{ transitionDelay: '150ms' }}
             >
               <p>
-                Fliq 360 combines clinical intelligence, workflow automation, and hospital-wide coordination into one unified ecosystem.
+                From managing appointments to maintaining patient records and coordinating clinical teams, MedFliq supports healthcare professionals with tools that simplify everyday responsibilities.
               </p>
               <p>
-                The platform is designed to support every layer of healthcare operations:
+                By reducing administrative effort and improving access to information, clinics can operate more efficiently while providing consistent, high-quality patient care.
               </p>
             </div>
           </div>
@@ -122,7 +122,7 @@ export default function AboutBuildSection() {
           style={{ transitionDelay: '300ms' }}
         >
           <p className="text-[17px] md:text-[20px] font-black italic text-med-ink leading-[1.6]">
-            "From doctors and nurses to laboratories and administration teams, Fliq 360 creates a connected healthcare environment where every system works together intelligently."
+            "From front-desk staff to specialists and care teams, MedFliq creates a connected clinic environment where everyone works together seamlessly."
           </p>
         </div>
 

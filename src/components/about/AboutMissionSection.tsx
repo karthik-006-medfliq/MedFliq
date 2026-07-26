@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from 'react'
 
 const MISSION_CARDS = [
   {
-    title: 'Human-Centered Intelligence',
-    description: 'Technology should amplify healthcare professionals, not replace them. Every workflow we design prioritizes clarity, usability, and clinical trust.',
+    title: 'Effortless Simplicity',
+    description: 'Every feature is crafted to be intuitive, so staff can adopt it without a steep learning curve.',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
@@ -14,8 +14,8 @@ const MISSION_CARDS = [
     ),
   },
   {
-    title: 'Unified Care Ecosystems',
-    description: 'Healthcare works best when systems communicate seamlessly. We believe hospitals need connected intelligence, not disconnected tools.',
+    title: 'Rock‑Solid Reliability',
+    description: 'Clinics can count on 99.9% uptime and instant access to patient data whenever they need it.',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
@@ -23,8 +23,8 @@ const MISSION_CARDS = [
     ),
   },
   {
-    title: 'Proactive Clinical Support',
-    description: 'Instead of passive records and generic alerts, we build systems that actively assist decisions with contextual intelligence.',
+    title: 'Patient‑First Experience',
+    description: 'Our platform puts the patient at the center, streamlining appointments, records, and follow‑ups.',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10"></circle>
@@ -34,8 +34,8 @@ const MISSION_CARDS = [
     ),
   },
   {
-    title: 'Scalable Innovation',
-    description: 'From emerging hospitals to enterprise healthcare networks, our infrastructure is designed to scale with the future of medicine.',
+    title: 'Relentless Innovation',
+    description: 'We listen to clinicians, iterate fast, and continuously add capabilities that matter to your practice.',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
@@ -90,7 +90,7 @@ export default function AboutMissionSection() {
             className={`text-3xl md:text-4xl lg:text-[42px] font-black text-med-ink leading-[1.1] tracking-tight mb-8 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
             style={{ transitionDelay: '100ms' }}
           >
-            Building The Intelligence Layer Behind Modern Hospitals
+            Empowering Clinics with Seamless Digital Workflows
           </h2>
 
           {/* Description */}
@@ -98,7 +98,7 @@ export default function AboutMissionSection() {
             className={`text-sm md:text-base text-med-slate leading-[1.6] font-medium max-w-[640px] transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
             style={{ transitionDelay: '150ms' }}
           >
-            Our mission is to empower healthcare institutions with intelligent systems that improve clinical efficiency, reduce operational friction, and support safer, faster, and more coordinated patient care.
+            Our mission is to give every clinic, from a single‑room practice to a multi‑location network, a reliable, intuitive platform that frees staff from paperwork and lets clinicians focus on patients.
           </p>
 
         </div>

@@ -24,8 +24,8 @@ export default function SpecializedCare() {
 
   const departments = [
     {
-      title: 'General Consultation',
-      description: 'Comprehensive check-ups and medical advice for your daily health needs.',
+      title: 'Multi-Specialty Clinics',
+      description: 'Coordinate multiple doctors, shared schedules, and centralized patient records.',
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-med-primary">
           <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
@@ -34,19 +34,17 @@ export default function SpecializedCare() {
       )
     },
     {
-      title: 'Laboratory Tests',
-      description: 'Quick and accurate diagnostic tests with state-of-the-art technology.',
+      title: 'Specialty Clinics',
+      description: 'Streamline complex workflows for focused medical treatments and ongoing therapies.',
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-med-primary">
-          <path d="M9 2v7l-4.5 8.5a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L15 9V2"></path>
-          <path d="M8.5 2h7"></path>
-          <path d="M5 16h14"></path>
+          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
         </svg>
       )
     },
     {
-      title: 'Pharmacy',
-      description: 'In-house pharmacy for convenient access to prescribed medications.',
+      title: 'Private Practices',
+      description: 'Simplify daily operations from front-desk registration to final follow-ups.',
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-med-primary">
           <path d="M10 3h4a2 2 0 0 1 2 2v2h-8V5a2 2 0 0 1 2-2zM3 7h18v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
@@ -75,13 +73,13 @@ export default function SpecializedCare() {
               </div>
             </div>
             <h2 className="text-4xl sm:text-5xl lg:text-[56px] font-black leading-[1.1] text-med-ink tracking-tight mb-6">
-              Clinical Solutions for<br />
-              <span className="text-med-primary">Every Department.</span>
+              Software Solutions for<br />
+              <span className="text-med-primary">Every Practice Type.</span>
             </h2>
           </div>
           <div className="max-w-xl">
             <p className="text-med-slate text-base md:text-lg leading-relaxed font-medium">
-              Integrating advanced technology with clinical expertise to redefine modern medical workflows.
+              Integrating reliable technology with practical tools to organize and simplify your clinic's daily workflows.
             </p>
           </div>
         </div>

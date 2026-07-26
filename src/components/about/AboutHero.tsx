@@ -46,11 +46,12 @@ export default function AboutHero() {
 
           {/* Heading */}
           <h1 
-            className={`text-4xl md:text-[52px] lg:text-[60px] font-black text-med-ink leading-[0.98] tracking-tight mb-8 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+            className={`text-4xl md:text-[52px] lg:text-[60px] font-black text-med-ink leading-[0.98] tracking-tight mb-8 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} 
             style={{ transitionDelay: '100ms' }}
           >
-            Reimagining<br />
-            <span className="text-med-primary italic">Healthcare.</span>
+            Elevating
+            <br />
+            <span className="text-med-primary italic">Clinic Care.</span>
           </h1>
 
           {/* Paragraph */}
@@ -58,7 +59,7 @@ export default function AboutHero() {
             className={`text-sm md:text-[15px] text-med-slate leading-relaxed max-w-[500px] font-medium mb-6 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
             style={{ transitionDelay: '150ms' }}
           >
-            MedFliq is building the next-generation operating system for healthcare institutions where AI doesn’t just record information, but actively assists clinical decisions, coordinates workflows, and enhances patient care across the entire hospital ecosystem.
+            MedFliq equips modern clinics with an integrated platform that streamlines appointments, patient records, billing, and daily workflows, letting clinicians focus on care while staff enjoy friction‑free operations.
           </p>
 
           {/* Orange Highlight Text */}
@@ -66,7 +67,7 @@ export default function AboutHero() {
             className={`text-xs md:text-[13px] font-bold text-med-primary max-w-[500px] mb-12 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
             style={{ transitionDelay: '200ms' }}
           >
-            Built for hospitals that are ready to move beyond fragmented software and into intelligent healthcare infrastructure.
+            Designed for clinics that demand a single, reliable system to manage every patient touchpoint.
           </p>
 
           {/* Stats Block */}

@@ -67,7 +67,7 @@ export default function NewNavbar() {
       {/* ── 1. Top Announcement Strip ── */}
       <div className="w-full bg-[#e8751a] py-2.5 px-4 text-center z-20">
         <p className="text-[#fffaf2] text-xs sm:text-sm font-medium tracking-wide">
-          Building AI-native healthcare intelligence tailored for modern hospitals
+          Building smart clinic management software tailored for modern practices
         </p>
       </div>
 

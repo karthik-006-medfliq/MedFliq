@@ -1,108 +1,112 @@
 export default function ServicesGridSection() {
   const cards = [
     {
-      title: "AI Clinical Decision Support",
-      description: "Our intelligent clinical assistance system continuously analyzes patient data, symptoms, diagnostics, vitals, and medical history to support physicians with contextual insights and evidence-backed recommendations.",
+      title: "Smart Appointment Scheduling",
+      description: "A single, intuitive calendar lets staff book, reschedule, or cancel appointments in seconds, while automated reminders keep patients informed and reduce no‑shows.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/>
-          <path d="M8 15v8"/>
-          <path d="M16 2v6a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1"/>
-          <path d="M11 20h2"/>
-          <path d="M15 15h4"/>
-          <path d="M17 19h2"/>
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+          <line x1="16" y1="2" x2="16" y2="6" />
+          <line x1="8" y1="2" x2="8" y2="6" />
+          <line x1="3" y1="10" x2="21" y2="10" />
         </svg>
       ),
       specs: [
-        "Differential diagnosis assistance",
-        "Real-time clinical reasoning"
+        "Online appointment scheduling",
+        "Doctor availability management",
+        "Walk-in patient handling",
+        "Automated reminders"
       ],
       delayClass: "services-card-delay-100",
       active: false
     },
     {
-      title: "Smart Medical Documentation",
-      description: "Reduce administrative overload with AI-generated medical documentation that automatically structures patient information into organized clinical notes and summaries.",
+      title: "Unified Patient Records",
+      description: "All patient information from visit notes to prescriptions is stored securely in one cloud‑based record, instantly searchable by any authorized clinician.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <ellipse cx="12" cy="5" rx="9" ry="3"/>
-          <path d="M3 5V19A9 3 0 0 0 21 19V5"/>
-          <path d="M3 12A9 3 0 0 0 21 12"/>
+          <ellipse cx="12" cy="5" rx="9" ry="3" />
+          <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+          <path d="M3 12A9 3 0 0 0 21 12" />
         </svg>
       ),
       specs: [
-        "Automated SOAP note generation",
-        "Intelligent patient summaries"
+        "Digital patient profiles",
+        "Consultation history",
+        "Medical documentation",
+        "Secure cloud storage"
       ],
       delayClass: "services-card-delay-200",
       active: false
     },
     {
-      title: "Medication & Patient Safety Intelligence",
-      description: "Improve patient safety through intelligent monitoring systems that proactively detect medication risks, drug interactions, and critical safety signals across patient histories.",
+      title: "Efficient Consultation Workflow",
+      description: "Doctors can capture notes, prescribe, and access full medical histories with just a few clicks, speeding up each visit and minimizing errors.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-          <path d="m9 12 2 2 4-4"/>
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          <path d="m9 12 2 2 4-4" />
         </svg>
       ),
       specs: [
-        "Drug interaction detection",
-        "Patient safety monitoring"
+        "Digital consultation notes",
+        "Prescription generation",
+        "Clinical documentation",
+        "Faster patient consultations"
       ],
       delayClass: "services-card-delay-300",
       active: false
     },
     {
-      title: "Hospital Workflow Automation",
-      description: "Automate repetitive operational workflows and improve coordination across departments with intelligent process management systems.",
+      title: "Streamlined Billing & Payments",
+      description: "Our billing engine generates invoices, tracks payments, and creates digital receipts, giving clinics clear financial visibility and fewer manual errors.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
         </svg>
       ),
       specs: [
-        "Discharge workflow automation",
-        "Follow-up coordination",
-        "Consultation management",
-        "Cross-department workflow synchronization"
+        "Invoice generation",
+        "Payment tracking",
+        "Digital receipts",
+        "Revenue overview"
       ],
       delayClass: "services-card-delay-400",
       active: false
     },
     {
-      title: "Unified Hospital Management System",
-      description: "Connect clinical, operational, and administrative systems into one centralized AI-native healthcare ecosystem designed for modern hospitals.",
+      title: "Proactive Follow‑Up Management",
+      description: "Automated follow‑up alerts and treatment‑plan tracking ensure patients return on schedule, improving outcomes and loyalty.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-          <path d="M3 9h18"/>
-          <path d="M9 21V9"/>
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+          <path d="M3 9h18" />
+          <path d="M9 21V9" />
         </svg>
       ),
       specs: [
-        "Unified healthcare infrastructure",
-        "Multi-role hospital access",
-        "Connected departmental workflows",
-        "End-to-end hospital coordination"
+        "Follow-up reminders",
+        "Scheduled revisit tracking",
+        "Treatment continuity",
+        "Appointment notifications"
       ],
       delayClass: "services-card-delay-500",
       active: false
     },
     {
-      title: "Real-Time Operational Intelligence",
-      description: "Transform fragmented hospital operations into actionable intelligence with centralized monitoring, AI summaries, and intelligent workflow visibility.",
+      title: "Comprehensive Clinic Administration",
+      description: "Team members share calendars, task lists, and role‑based access, cutting redundant paperwork and keeping the whole clinic in sync.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M3 3v18h18"/>
-          <path d="m19 9-5 5-4-4-3 3"/>
+          <path d="M3 3v18h18" />
+          <path d="m19 9-5 5-4-4-3 3" />
         </svg>
       ),
       specs: [
-        "AI-generated operational insights",
-        "Intelligent patient timelines",
-        "Centralized workflow visibility",
-        "Faster institutional coordination"
+        "Staff coordination",
+        "Reception management",
+        "Role-based access",
+        "Daily operational overview"
       ],
       delayClass: "services-card-delay-600",
       active: false
@@ -114,20 +118,18 @@ export default function ServicesGridSection() {
       <div className="max-w-[1300px] mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 xl:gap-8">
           {cards.map((card, index) => (
-            <div 
-              key={index} 
-              className={`services-card-reveal ${card.delayClass} flex flex-col h-full bg-white/70 backdrop-blur-md rounded-[32px] sm:rounded-[40px] p-8 sm:p-10 border group hover:-translate-y-1.5 transition-all duration-500 hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] ${
-                card.active 
-                  ? 'border-med-primary/20 shadow-[0_8px_32px_rgba(232,117,26,0.1)]' 
+            <div
+              key={index}
+              className={`services-card-reveal ${card.delayClass} flex flex-col h-full bg-white/70 backdrop-blur-md rounded-[32px] sm:rounded-[40px] p-8 sm:p-10 border group hover:-translate-y-1.5 transition-all duration-500 hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] ${card.active
+                  ? 'border-med-primary/20 shadow-[0_8px_32px_rgba(232,117,26,0.1)]'
                   : 'border-white/80 shadow-[0_4px_24px_rgba(0,0,0,0.04)] group-hover:border-med-primary/40'
-              }`}
+                }`}
             >
               {/* Icon Bubble */}
-              <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-8 shadow-sm transition-all duration-500 ${
-                card.active 
-                  ? 'bg-med-primary text-white' 
+              <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-8 shadow-sm transition-all duration-500 ${card.active
+                  ? 'bg-med-primary text-white'
                   : 'bg-white border border-gray-100 text-med-primary group-hover:border-[#e8751a]/30 group-hover:shadow-[0_0_20px_rgba(232,117,26,0.15)]'
-              }`}>
+                }`}>
                 {card.icon}
               </div>
 

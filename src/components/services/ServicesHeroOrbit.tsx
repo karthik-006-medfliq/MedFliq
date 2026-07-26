@@ -3,7 +3,7 @@ export default function ServicesHeroOrbit() {
     { id: 1, title: 'Patient Safety', icon: <><span className="hidden lg:inline">🛡️</span><span className="lg:hidden">🩺</span></>, angle: 0 },
     { id: 4, title: 'Unified EHR', icon: '🏥', angle: 60 },
     { id: 2, title: 'Smart Docs', icon: '📝', angle: 120 },
-    { id: 5, title: 'Hospital Intelligence', icon: '📊', angle: 180 },
+    { id: 5, title: 'Clinical Intelligence', icon: '📊', angle: 180 },
     { id: 3, title: 'Workflow Automation', icon: '⚙️', angle: 240 },
     { id: 6, title: 'AI Reasoning', icon: '🧠', angle: 300 },
   ]

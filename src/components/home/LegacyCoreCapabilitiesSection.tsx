@@ -172,7 +172,7 @@ export default function LegacyCoreCapabilitiesSection() {
                 Real-Time Operational Intelligence
               </h3>
               <p className="text-med-slate text-sm md:text-base leading-relaxed font-medium">
-                Transform fragmented hospital operations into actionable intelligence with centralized workflow visibility across departments.
+                Transform fragmented clinic operations into actionable intelligence with centralized workflow visibility across all roles.
               </p>
             </div>
 

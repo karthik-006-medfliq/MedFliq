@@ -20,25 +20,20 @@ export default function HeroSection() {
           <div className="inline-flex items-center gap-3 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-[11px] font-bold mb-6 border border-med-primary/10 shadow-premium text-med-primary min-w-[310px] max-w-full justify-center shimmer">
             <div className="w-2 h-2 rounded-full bg-med-primary animate-ping shrink-0" />
             <span className="tracking-[0.25em] uppercase font-black font-mono text-med-primary">
-              AI-Native Hospital Intelligence Platform
+              Smart Clinic Management Platform
             </span>
           </div>
 
           {/* Main heading — three lines */}
           <h1 className="text-3xl md:text-4xl lg:text-[50px] font-black leading-[1.1] mb-4 tracking-[-0.03em] text-med-ink">
-            <span className="block mb-1">Healthcare Systems</span>
+            <span className="block mb-1">Clinic Teams</span>
             <span className="block mb-1">That Don't Just</span>
-            <span className="text-gradient-orange italic block">Store Data, They Think.</span>
+            <span className="text-gradient-orange italic block">Collect Data, They Care.</span>
           </h1>
 
           {/* Body paragraph */}
           <p className={`text-sm md:text-base text-med-slate mb-6 mx-auto leading-relaxed font-medium ${showHeroImage ? 'max-w-xl lg:mx-0' : 'max-w-2xl text-center'}`}>
-            MedFliq transforms fragmented hospital workflows into a unified,
-            intelligent care ecosystem. From clinical reasoning to operational
-            coordination,{' '}
-            <span className="text-med-ink font-bold">Fliq 360</span>
-            {' '}empowers hospitals with AI agents that actively assist every
-            decision, every department, and every patient journey.
+            MedFliq unifies fragmented clinic workflows into a single, intelligent platform. From scheduling appointments to managing patient follow‑ups, <span className="text-med-ink font-bold">Fliq 360</span> equips clinics with smart tools that support every staff member and enhance every patient’s experience.
           </p>
 
           {/* CTA buttons */}
@@ -64,7 +59,7 @@ export default function HeroSection() {
 
           {/* Caption */}
           <p className={`text-xs font-bold text-med-slate mt-4 text-center ${showHeroImage ? 'lg:text-left' : ''}`}>
-            Built for next-generation hospitals, clinics, and healthcare institutions.
+            Built for modern clinics and independent practices.
           </p>
         </div>
 

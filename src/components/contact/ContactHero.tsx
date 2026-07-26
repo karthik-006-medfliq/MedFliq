@@ -48,10 +48,10 @@ export default function ContactHero() {
             className={`text-[38px] sm:text-5xl md:text-[60px] lg:text-[64px] xl:text-[70px] font-black text-med-ink leading-[1] tracking-tight mb-8 transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
             style={{ transitionDelay: '300ms' }}
           >
-            Building the Future of <br />
-            <span className="text-med-primary italic text-[0.9em]">Intelligent </span>
+            Empowering Your Clinic’s Smart Future.<br />
+            <span className="text-med-primary italic text-[0.9em]">Connected </span>
             <span className="text-med-primary italic relative inline-block text-[0.9em]">
-              Healthcare.
+              Care.
             </span>
           </h1>
 
@@ -60,7 +60,7 @@ export default function ContactHero() {
             className={`text-lg md:text-xl text-med-slate leading-relaxed max-w-[720px] font-medium transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
             style={{ transitionDelay: '450ms' }}
           >
-            From hospitals to healthcare innovators, we collaborate with organizations ready to redefine care delivery through connected intelligence.
+            We partner with forward‑thinking clinics to transform everyday patient care with connected, intelligent tools.
           </p>
           
         </div>

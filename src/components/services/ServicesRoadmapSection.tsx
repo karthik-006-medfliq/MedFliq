@@ -2,7 +2,7 @@ export default function ServicesRoadmapSection() {
   const cards = [
     {
       number: "01",
-      title: "Agentic EHR systems",
+      title: "Rapid Onboarding",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-med-primary transition-transform duration-300 group-hover:scale-110">
           <ellipse cx="12" cy="5" rx="9" ry="3"/>
@@ -14,7 +14,7 @@ export default function ServicesRoadmapSection() {
     },
     {
       number: "02",
-      title: "AI-native HMS infrastructure",
+      title: "Core Patient Records",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-med-primary transition-transform duration-300 group-hover:scale-110">
           <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
@@ -26,7 +26,7 @@ export default function ServicesRoadmapSection() {
     },
     {
       number: "03",
-      title: "Full intelligent hospital OS",
+      title: "Advanced Billing & Automation",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-med-primary transition-transform duration-300 group-hover:scale-110">
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -44,16 +44,16 @@ export default function ServicesRoadmapSection() {
         {/* Header Section */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h4 className="services-roadmap-reveal services-roadmap-delay-100 text-[11px] sm:text-[12px] font-bold text-med-primary uppercase tracking-[0.2em] mb-4">
-            OUR ROADMAP
+            IMPLEMENTATION ROADMAP
           </h4>
           
           <h2 className="services-roadmap-reveal services-roadmap-delay-200 text-[36px] sm:text-[42px] lg:text-[48px] font-black text-med-ink leading-tight mb-6">
-            Continuously Expanding The Future Of Healthcare <br className="hidden md:block" />
-            Intelligence
+            Clinic‑Focused Implementation Journey <br className="hidden md:block" />
+            
           </h2>
 
           <p className="services-roadmap-reveal services-roadmap-delay-300 text-[16px] sm:text-[18px] text-med-slate font-medium leading-relaxed max-w-2xl mx-auto">
-            Our long-term vision extends beyond digital healthcare systems. MedFliq is building the intelligent operating infrastructure capable of powering fully connected, AI-driven hospitals globally.
+            We guide clinics through a step‑by‑step journey, from quick onboarding to full automation, ensuring every stage delivers real operational benefits.
           </p>
         </div>
 

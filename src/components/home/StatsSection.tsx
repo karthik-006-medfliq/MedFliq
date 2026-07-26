@@ -22,8 +22,8 @@ export default function StatsSection() {
   const stats = [
     {
       title: '24/7',
-      labelLine1: 'AI Clinical',
-      labelLine2: 'Assistance',
+      labelLine1: 'Smart Appointment',
+      labelLine2: 'Scheduling',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-med-primary">
           <circle cx="12" cy="12" r="10"></circle>
@@ -33,8 +33,8 @@ export default function StatsSection() {
     },
     {
       title: 'Unified',
-      labelLine1: 'Hospital Intelligence',
-      labelLine2: 'Layer',
+      labelLine1: 'Clinic Intelligence',
+      labelLine2: 'Platform',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-med-primary">
           <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
@@ -45,8 +45,8 @@ export default function StatsSection() {
     },
     {
       title: 'Real-Time',
-      labelLine1: 'Clinical Decision',
-      labelLine2: 'Support',
+      labelLine1: 'Instant Patient',
+      labelLine2: 'Record Access',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-med-primary">
           <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
@@ -55,7 +55,7 @@ export default function StatsSection() {
     },
     {
       title: 'End-to-End',
-      labelLine1: 'Hospital Workflow',
+      labelLine1: 'Full Clinic',
       labelLine2: 'Automation',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-med-primary">

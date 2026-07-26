@@ -34,8 +34,8 @@ export default function AboutCTASection() {
           className={`text-[36px] md:text-[44px] lg:text-[54px] font-black text-med-ink leading-[1.1] tracking-tight transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
           style={{ transitionDelay: '50ms' }}
         >
-          Join Us In Building The Future of<br className="hidden md:block" />
-          <span className="text-med-primary"> Intelligent Healthcare</span>
+          Ready to Elevate Your<br className="hidden md:block" />
+          <span className="text-med-primary"> Clinic Operations?</span>
         </h2>
 
         {/* Paragraph */}
@@ -43,7 +43,7 @@ export default function AboutCTASection() {
           className={`mt-6 lg:mt-8 text-[16px] md:text-[18px] lg:text-[20px] text-med-slate leading-[1.6] font-medium max-w-[700px] transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
           style={{ transitionDelay: '100ms' }}
         >
-          From hospitals to healthcare innovators, we collaborate with organizations ready to redefine care delivery through connected intelligence.
+          Whether you're opening your first private practice or expanding across multiple locations, MedFliq is ready to support your journey with solutions designed around modern clinical work.
         </p>
 
       </div>

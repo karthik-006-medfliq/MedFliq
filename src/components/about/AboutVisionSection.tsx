@@ -2,23 +2,23 @@ import { useEffect, useRef, useState } from 'react'
 
 const VISION_CARDS = [
   {
-    title: 'Disconnected Systems',
-    description: 'Records are scattered, and clinical teams navigate massive friction daily. Fragmented tools slow down decisions and increase coordination gaps.',
+    title: 'Fragmented Clinic Tools',
+    description: 'Clinics juggle multiple apps, spreadsheets, and paper forms daily, creating friction that slows patient care and burdens staff.',
     highlight: true,
   },
   {
-    title: 'Unified Intelligence',
-    description: 'Fliq 360 unifies EHRs, diagnostics, and operations into one connected layer. Every department gains access to connected, real-time clinical context.',
+    title: 'Connected Clinic Workflow',
+    description: 'A single platform unifies appointments, records, and billing, giving every team member instant access to up‑to‑date patient information.',
     highlight: true,
   },
   {
-    title: 'Active Assistance',
-    description: 'AI agents that actively assist decisions instead of passive alerts. Intelligent support helps teams act faster with fewer manual steps.',
+    title: 'Intelligent Clinic Automation',
+    description: 'Automation takes care of routine tasks like scheduling, reminders, and billing entries, so staff can focus on care instead of paperwork.',
     highlight: true,
   },
   {
-    title: 'Seamless Care',
-    description: 'Safer decisions, reduced workloads, and cohesive team collaboration. Connected workflows improve continuity from diagnosis to follow-up.',
+    title: 'Coordinated Patient Care',
+    description: 'Real‑time context and streamlined hand‑offs let clinicians move patients smoothly from consult to follow‑up, reducing errors and wait times.',
     highlight: true,
   },
 ]
@@ -70,8 +70,8 @@ export default function AboutVisionSection() {
             className={`text-4xl md:text-5xl lg:text-[48px] font-black text-med-ink leading-[1.1] tracking-tight mb-10 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
             style={{ transitionDelay: '100ms' }}
           >
-            Healthcare Should Think Faster<br className="hidden md:block" />
-            Than The Complexity Around It
+            Our Vision for the Future of<br className="hidden md:block" />
+            Modern Clinical Operations
           </h2>
 
           {/* Paragraphs */}
@@ -80,16 +80,16 @@ export default function AboutVisionSection() {
             style={{ transitionDelay: '150ms' }}
           >
             <p>
-              Modern hospitals generate enormous amounts of clinical and operational data every second. Yet most healthcare systems remain disconnected, reactive, and heavily dependent on manual coordination.
+              Managing a clinic often means balancing patient care with intense administrative responsibilities. Appointments, medical records, billing, and follow-ups all compete for your attention.
             </p>
             <p>
-              Doctors navigate fragmented records. Nurses manage operational bottlenecks. Administrative teams work across isolated systems. Critical insights are often buried beneath noise, delays, and repetitive workflows.
+              Instead of relying on disconnected systems or manual processes, clinics need a way to manage their daily operations from one secure platform without adding friction.
             </p>
             <p>
               MedFliq was created to solve this foundational problem.
             </p>
             <p>
-              We envisioned a healthcare ecosystem where intelligent AI agents work silently alongside medical professionals, continuously analyzing, coordinating, documenting, and assisting in real time.
+              We envision a future where every clinic, regardless of its size, has access to practical technology that improves efficiency, supports healthcare teams, and strengthens patient relationships.
             </p>
           </div>
 
@@ -98,7 +98,7 @@ export default function AboutVisionSection() {
             className={`text-[17px] md:text-[20px] font-black italic text-med-ink mt-8 mb-8 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
             style={{ transitionDelay: '200ms' }}
           >
-            That vision became Fliq 360.
+            That vision became MedFliq.
           </p>
 
           {/* Final Paragraph */}
@@ -106,7 +106,7 @@ export default function AboutVisionSection() {
             className={`text-[13px] md:text-[15px] text-med-slate leading-relaxed font-medium max-w-[580px] transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
             style={{ transitionDelay: '250ms' }}
           >
-            An AI-native healthcare platform designed not as another software layer, but as the intelligent infrastructure connecting the entire hospital.
+            A comprehensive healthcare platform designed not as another software layer, but as the central infrastructure connecting your entire clinic.
           </p>
         </div>
 

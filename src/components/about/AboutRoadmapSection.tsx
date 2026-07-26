@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from 'react'
 
 const ROADMAP_PHASES = [
   {
-    phase: 'Phase 1',
-    title: 'Agentic EHR Infrastructure',
+    phase: 'Core Foundations',
+    title: 'Secure Digital Records Platform',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
@@ -13,8 +13,8 @@ const ROADMAP_PHASES = [
     ),
   },
   {
-    phase: 'Phase 2',
-    title: 'AI-Native Hospital Management System',
+    phase: 'Clinic Operations',
+    title: 'Unified Practice Management Suite',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
@@ -24,8 +24,8 @@ const ROADMAP_PHASES = [
     ),
   },
   {
-    phase: 'Phase 3',
-    title: 'Full Intelligent Hospital Operating System',
+    phase: 'Future Growth',
+    title: 'Next-Gen Clinic Operating System',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
@@ -72,7 +72,7 @@ export default function AboutRoadmapSection() {
             className={`text-[11px] sm:text-xs font-bold text-med-primary uppercase tracking-[0.2em] mb-6 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
             style={{ transitionDelay: '50ms' }}
           >
-            OUR ROADMAP
+            OUR CLINIC JOURNEY
           </span>
 
           {/* Heading */}
@@ -80,7 +80,7 @@ export default function AboutRoadmapSection() {
             className={`text-3xl md:text-4xl lg:text-[42px] font-black text-med-ink leading-[1.1] tracking-tight transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
             style={{ transitionDelay: '100ms' }}
           >
-            Building The Future Backbone Of Smart Healthcare
+            Paving the Digital Path for Every Modern Clinic
           </h2>
 
         </div>
@@ -116,7 +116,7 @@ export default function AboutRoadmapSection() {
           className={`mt-16 text-sm md:text-[15px] text-med-slate leading-[1.6] font-medium max-w-2xl text-center transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
           style={{ transitionDelay: '250ms' }}
         >
-          Our long-term vision is to create the intelligent infrastructure layer powering next-generation healthcare institutions globally.
+          Our long-term vision is to deliver a rock-solid software foundation that empowers clinics of all sizes to deliver exceptional patient care.
         </p>
 
       </div>

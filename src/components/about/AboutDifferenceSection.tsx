@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from 'react'
 
 const DIFFERENCE_ITEMS = [
-  'AI-native architecture from the foundation',
-  'Agentic clinical intelligence',
-  'Unified operational coordination',
-  'Real-time healthcare assistance',
-  'End-to-end hospital ecosystem',
-]
+  'Streamlined appointment flow',
+  'Secure, unified patient records',
+  'Instant team collaboration',
+  'Accurate, automated billing',
+  'Scalable practice infrastructure',
+  'Real‑time performance insights',
+];
 
 export default function AboutDifferenceSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -47,7 +48,7 @@ export default function AboutDifferenceSection() {
               className={`text-[11px] sm:text-xs font-bold text-med-primary uppercase tracking-[0.2em] mb-6 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
               style={{ transitionDelay: '50ms' }}
             >
-              WHY WE'RE DIFFERENT
+              Why Clinics Trust MedFliq
             </span>
 
             {/* Heading */}
@@ -55,7 +56,7 @@ export default function AboutDifferenceSection() {
               className={`text-3xl md:text-4xl lg:text-[42px] font-black text-med-ink leading-[1.1] tracking-tight mb-8 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
               style={{ transitionDelay: '100ms' }}
             >
-              Beyond Traditional Healthcare<br className="hidden lg:block" /> Software
+              Empowering Daily Clinic Success
             </h2>
 
             {/* Paragraphs */}
@@ -64,13 +65,13 @@ export default function AboutDifferenceSection() {
               style={{ transitionDelay: '150ms' }}
             >
               <p>
-                Most healthcare platforms focus on storing records, managing appointments, or digitizing isolated workflows.
+                Running a modern clinic means balancing high‑quality patient care with streamlined operations. From booking to follow‑up, every step must be efficient and reliable.
               </p>
               <p>
-                MedFliq takes a fundamentally different approach. We embed AI agents directly into the core of care delivery which enables hospitals to move from passive software systems to active operational intelligence.
+                MedFliq unifies scheduling, records, billing, and team communication in a single secure platform, eliminating manual handoffs and reducing errors.
               </p>
               <p>
-                Instead of overwhelming clinicians with disconnected alerts and fragmented interfaces, our platform continuously interprets context, surfaces meaningful insights, and assists healthcare teams in real time.
+                Built to grow with you, the platform scales from a single practice to multi‑location networks, adding new services and staff without disruption.
               </p>
             </div>
           </div>

@@ -3,7 +3,7 @@ import CardSwap, { Card } from '../effects/CardSwap'
 export const aboutCardsData = [
   {
     label: 'REAL-TIME',
-    description: 'Process clinical data and coordinate hospital operations instantly without delays.',
+    description: 'Handle patient consultations and coordinate clinic workflows instantly, eliminating delays.',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-med-primary">
         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
@@ -12,7 +12,7 @@ export const aboutCardsData = [
   },
   {
     label: 'SECURE',
-    description: 'Enterprise-grade infrastructure ensuring patient data remains protected and compliant.',
+    description: 'Robust security that keeps patient records safe and fully compliant with regulations.',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-med-primary">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
@@ -22,7 +22,7 @@ export const aboutCardsData = [
   },
   {
     label: 'UNIFIED',
-    description: 'One intelligent ecosystem connecting EHRs, diagnostics, and daily workflows seamlessly.',
+    description: 'A single, reliable system that links EMRs, billing, and daily clinic workflows seamlessly.',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-med-primary">
         <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
@@ -32,8 +32,8 @@ export const aboutCardsData = [
     )
   },
   {
-    label: 'AI-NATIVE',
-    description: 'Built from the ground up with AI agents to actively assist your medical teams.',
+    label: 'INTELLIGENT',
+    description: 'Designed with intelligent tools that actively support your clinic staff at every step.',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-med-primary">
         <circle cx="12" cy="12" r="10"></circle>

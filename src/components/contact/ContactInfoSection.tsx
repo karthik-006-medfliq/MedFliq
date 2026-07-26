@@ -53,7 +53,7 @@ export default function ContactInfoSection() {
               className={`text-white/90 text-lg sm:text-[19px] leading-relaxed max-w-[400px] mb-12 sm:mb-16 font-medium transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
               style={{ transitionDelay: '200ms' }}
             >
-              Clinical Intelligence designed to think and respond the way clinicians do. Join us in building the backbone of smart healthcare.
+              Clinic‑focused intelligence that thinks like your staff, helping you build the backbone of a smarter, more efficient practice.
             </p>
 
             <div className="flex flex-col gap-10 sm:gap-12 mt-auto">

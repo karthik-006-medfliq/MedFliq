@@ -39,13 +39,14 @@ export default function CoreCapabilities() {
                 CORE CAPABILITIES
               </div>
               <h2 className="text-4xl sm:text-5xl lg:text-[56px] font-black leading-[1.1] text-med-ink tracking-tight mb-8">
-                Designed Around <br className="hidden lg:block"/>
-                <span className="text-med-primary italic">Intelligence</span>,<br className="hidden sm:block" />
-                Not Just Software
-              </h2>
-              <p className="text-med-slate text-base md:text-lg leading-relaxed font-medium max-w-md">
-                Our AI-native healthcare infrastructure works securely in the background to reason, coordinate, and actively assist your clinical teams in real time.
-              </p>
+              Built Around <br className="hidden lg:block" />
+              <span className="text-med-primary italic">Clinic Efficiency</span>,
+              <br className="hidden sm:block" />
+              Not Just Software
+            </h2>
+            <p className="text-med-slate text-base md:text-lg leading-relaxed font-medium max-w-md">
+              Our unified clinic management platform works securely in the background, organizing appointments, tracking records, and supporting your staff in real‑time.
+            </p>
             </div>
           </div>
         </div>
@@ -55,8 +56,8 @@ export default function CoreCapabilities() {
           
           <div className={`transition-all duration-700 ease-out delay-100 h-full ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}>
             <CoreCapabilityAnimatedCard 
-              title="AI Clinical Reasoning"
-              description="Continuously analyzes patient data, symptoms, vitals, and history to assist physicians with evidence-backed clinical insights and differential suggestions."
+              title="Smart Appointment Management"
+              description="Efficiently handles bookings, walk-ins, and cancellations while preventing double-booking to keep your daily clinic schedule highly organized."
               icon={
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-med-primary">
                   <circle cx="12" cy="12" r="10"></circle>
@@ -69,8 +70,8 @@ export default function CoreCapabilities() {
 
           <div className={`transition-all duration-700 ease-out delay-200 h-full ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}>
              <CoreCapabilityAnimatedCard 
-              title="Smart Documentation"
-              description="Automatically generates structured medical notes, SOAP summaries, and patient timelines which reduces administrative overload."
+              title="Secure Digital EMR"
+              description="Safely stores patient histories, structured consultation notes, and active prescriptions in one compliant, instantly accessible digital record."
               icon={
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-med-primary">
                   <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
@@ -82,8 +83,8 @@ export default function CoreCapabilities() {
 
           <div className={`transition-all duration-700 ease-out delay-300 h-full ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}>
             <CoreCapabilityAnimatedCard 
-              title="Medication & Safety"
-              description="Detects drug interactions, risk patterns, and critical safety signals in real time to support safer, more reliable clinical choices."
+              title="Integrated Clinic Billing"
+              description="Streamlines invoice generation, payment tracking, and financial reporting to help your practice maintain complete and accurate financial oversight."
               icon={
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-med-primary">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
@@ -94,8 +95,8 @@ export default function CoreCapabilities() {
 
           <div className={`transition-all duration-700 ease-out delay-400 h-full ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}>
             <CoreCapabilityAnimatedCard 
-              title="Real-Time Intelligence"
-              description="Transform fragmented hospital operations into actionable intelligence with centralized workflow visibility across departments."
+              title="Practice Analytics"
+              description="Transform fragmented daily operations into clear insights with centralized visibility over patient volume, revenue, and staff productivity."
               icon={
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-med-primary">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>

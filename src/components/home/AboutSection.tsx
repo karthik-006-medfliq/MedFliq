@@ -21,10 +21,10 @@ export default function AboutSection() {
   }, [])
 
   const bullets = [
-    'Unified clinical intelligence across departments',
-    'AI agents designed to actively assist healthcare teams',
-    'Intelligent workflows that reduce operational friction',
-    'Built to scale from hospitals to enterprise healthcare systems',
+    'Centralized EMR for every clinic location',
+    'Smart tools that assist doctors and front‑desk staff',
+    'Automated workflows that cut admin friction',
+    'Scalable from solo practices to multi‑branch clinics',
   ]
 
   return (
@@ -35,24 +35,21 @@ export default function AboutSection() {
         <div className="flex flex-col relative z-20">
           {/* Eyebrow */}
           <div className={`text-[11px] sm:text-xs font-bold text-med-primary uppercase tracking-[0.15em] mb-4 sm:mb-6 transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            ABOUT MEDFLIQ
+            ABOUT US
           </div>
           
           {/* Heading */}
           <h2 className={`text-[32px] sm:text-5xl lg:text-[56px] font-black leading-[1.1] text-med-ink tracking-tight mb-8 transition-all duration-700 ease-out delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            The Operating System{' '}
-            <br className="hidden lg:block" />
-            For <br className="block lg:hidden" />
-            <span className="text-med-primary">Modern Healthcare.</span>
+            Your Clinic’s Operating System
           </h2>
           
           {/* Paragraphs */}
           <div className={`flex flex-col gap-6 text-med-slate text-base md:text-lg leading-relaxed font-medium mb-12 transition-all duration-700 ease-out delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <p>
-              Today’s hospitals run on disconnected systems, scattered records, delayed insights, and overwhelming administrative burden. MedFliq changes that by introducing an AI-native healthcare infrastructure designed to reason, coordinate, and assist in real time.
+              Today’s clinics often juggle fragmented tools, scattered patient records, delayed appointments, and heavy admin work. MedFliq offers a single, unified platform that organizes and streamlines daily operations for your clinic.
             </p>
             <p>
-              Fliq 360 unifies EHRs, diagnostics, workflows, clinical notes, patient histories, and hospital operations into one intelligent ecosystem which enables faster decisions, safer care, and smoother collaboration across every role inside the hospital.
+              Fliq 360 brings together EMR, billing, scheduling, notes, and overall clinic workflows into one reliable ecosystem, speeding up patient intake, securing records, and enhancing collaboration across every team member.
             </p>
           </div>
 
