@@ -11,7 +11,7 @@ export default function ServicesCTASection() {
         </h2>
 
         <p className="services-cta-reveal services-cta-delay-200 text-[18px] sm:text-[20px] text-med-slate font-medium leading-relaxed max-w-[720px] mb-12">
-          Whether you're starting a new practice or expanding across multiple locations, MedFliq provides the tools your clinic needs to stay organized, efficient, and patient-focused.
+          Starting a new practice or growing into your next location  either way, MedFliq gives you what you need to stay organized, run efficiently, and keep the focus where it belongs: on your patients.
         </p>
 
         <Link

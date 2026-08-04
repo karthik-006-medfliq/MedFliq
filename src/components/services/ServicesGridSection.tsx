@@ -2,7 +2,7 @@ export default function ServicesGridSection() {
   const cards = [
     {
       title: "Smart Appointment Scheduling",
-      description: "A single, intuitive calendar lets staff book, reschedule, or cancel appointments in seconds, while automated reminders keep patients informed and reduce no‑shows.",
+      description: "One calendar. Staff can book, reschedule, or cancel in seconds, and automated reminders do the work of chasing patients down  which means fewer no-shows without anyone lifting a finger.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
@@ -22,7 +22,7 @@ export default function ServicesGridSection() {
     },
     {
       title: "Unified Patient Records",
-      description: "All patient information from visit notes to prescriptions is stored securely in one cloud‑based record, instantly searchable by any authorized clinician.",
+      description: "Visit notes, prescriptions, everything  stored in one secure cloud record that any authorized clinician can pull up in seconds, no digging through old files.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <ellipse cx="12" cy="5" rx="9" ry="3" />
@@ -41,7 +41,7 @@ export default function ServicesGridSection() {
     },
     {
       title: "Efficient Consultation Workflow",
-      description: "Doctors can capture notes, prescribe, and access full medical histories with just a few clicks, speeding up each visit and minimizing errors.",
+      description: "A few clicks and doctors have notes, prescriptions, and full medical history right in front of them. Visits move faster, and there's a lot less room for mistakes.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
@@ -59,7 +59,7 @@ export default function ServicesGridSection() {
     },
     {
       title: "Streamlined Billing & Payments",
-      description: "Our billing engine generates invoices, tracks payments, and creates digital receipts, giving clinics clear financial visibility and fewer manual errors.",
+      description: "Invoices, payment tracking, digital receipts  the billing engine handles it, so clinics get a clear financial picture without the usual manual errors piling up.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
@@ -75,8 +75,8 @@ export default function ServicesGridSection() {
       active: false
     },
     {
-      title: "Proactive Follow‑Up Management",
-      description: "Automated follow‑up alerts and treatment‑plan tracking ensure patients return on schedule, improving outcomes and loyalty.",
+      title: "Proactive Follow-Up Management",
+      description: "Patients forget. Automated follow-up alerts and treatment-plan tracking make sure they come back on schedule anyway better outcomes, better loyalty.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
@@ -95,7 +95,7 @@ export default function ServicesGridSection() {
     },
     {
       title: "Comprehensive Clinic Administration",
-      description: "Team members share calendars, task lists, and role‑based access, cutting redundant paperwork and keeping the whole clinic in sync.",
+      description: "Shared calendars, task lists, role-based access the whole team stays in sync, and nobody's duplicating paperwork someone else already handled.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M3 3v18h18" />

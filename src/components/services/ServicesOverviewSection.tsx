@@ -23,7 +23,7 @@ export default function ServicesOverviewSection() {
 
           {/* Paragraph */}
           <p className="text-[16px] sm:text-[18px] lg:text-[20px] font-medium text-med-slate leading-[1.8] max-w-[900px] lg:max-w-[980px] mx-auto services-overview-reveal services-overview-delay-3">
-            Every practice faces the same core challenges: scheduling patients, keeping records organized, coordinating staff, and managing billing. Our services bring all of those workflows together in one secure platform, so clinicians can focus on care while teams operate smoothly and efficiently.
+            Every clinic runs into the same walls. Scheduling gets messy, records end up scattered across three different tools, staff coordination happens over text and sticky notes, and billing falls behind because nobody has time to catch up. We built one platform that handles all of it, so your clinicians get back to focusing on patients and the rest of the team isn't stuck putting out fires all day.
           </p>
 
         </div>

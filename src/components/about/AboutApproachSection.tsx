@@ -57,13 +57,13 @@ export default function AboutApproachSection() {
               className={`text-[15px] md:text-[17px] text-med-slate leading-[1.7] font-medium transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
               style={{ transitionDelay: '150ms' }}
             >
-              Managing a clinic often means balancing patient care with countless administrative responsibilities. Appointments, medical records, billing, staff coordination, and follow-ups all compete for attention throughout the day.
+              Anyone who's worked in a clinic knows the drill. Patient care is only half the job the other half is appointments, records, billing, staff schedules, follow-ups, all competing for attention at the same time, every single day.
             </p>
             <p 
               className={`text-[15px] md:text-[17px] text-med-slate leading-[1.7] font-medium transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
               style={{ transitionDelay: '200ms' }}
             >
-              Our goal is simple: make everyday work easier so healthcare professionals can spend more time delivering quality care and less time managing paperwork.
+              So our goal is simple: make the everyday work easier, so healthcare professionals spend more time with patients and less time buried in paperwork.
             </p>
 
             {/* Orange Italic Line */}
@@ -71,7 +71,7 @@ export default function AboutApproachSection() {
               className={`mt-4 md:mt-6 text-[17px] md:text-[19px] font-black italic text-med-primary transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
               style={{ transitionDelay: '250ms' }}
             >
-              Whether it's an independent practice or a growing multi-specialty clinic, MedFliq is designed to support the way clinics actually operate.
+              It doesn't matter if you're a solo practice or a growing multi-specialty clinic MedFliq is built around how clinics actually work, not how software companies think they should.
             </p>
           </div>
 

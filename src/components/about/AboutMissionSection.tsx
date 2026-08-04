@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 const MISSION_CARDS = [
   {
     title: 'Effortless Simplicity',
-    description: 'Every feature is crafted to be intuitive, so staff can adopt it without a steep learning curve.',
+    description: 'No steep learning curve, no lengthy onboarding. If it takes a manual to figure out, we didn\'t build it right.',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
@@ -14,8 +14,8 @@ const MISSION_CARDS = [
     ),
   },
   {
-    title: 'Rock‑Solid Reliability',
-    description: 'Clinics can count on 99.9% uptime and instant access to patient data whenever they need it.',
+    title: 'Rock-Solid Reliability',
+    description: '99.9% uptime. Patient data is there the second you need it no spinning wheels, no "try again later."',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
@@ -23,8 +23,8 @@ const MISSION_CARDS = [
     ),
   },
   {
-    title: 'Patient‑First Experience',
-    description: 'Our platform puts the patient at the center, streamlining appointments, records, and follow‑ups.',
+    title: 'Patient-First Experience',
+    description: 'Appointments, records, follow-ups everything\'s built around the patient, not the other way around.',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10"></circle>
@@ -35,7 +35,7 @@ const MISSION_CARDS = [
   },
   {
     title: 'Relentless Innovation',
-    description: 'We listen to clinicians, iterate fast, and continuously add capabilities that matter to your practice.',
+    description: 'We talk to the clinicians actually using this every day, and we build what they ask for. Fast.',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
@@ -98,7 +98,7 @@ export default function AboutMissionSection() {
             className={`text-sm md:text-base text-med-slate leading-[1.6] font-medium max-w-[640px] transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
             style={{ transitionDelay: '150ms' }}
           >
-            Our mission is to give every clinic, from a single‑room practice to a multi‑location network, a reliable, intuitive platform that frees staff from paperwork and lets clinicians focus on patients.
+            Whether you're running a single-room practice or a network with locations across the city, our mission stays the same: give clinics a platform they can actually trust, one that takes paperwork off staff's plates so clinicians can get back to what matters patients.
           </p>
 
         </div>

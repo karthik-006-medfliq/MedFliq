@@ -68,10 +68,10 @@ export default function AboutBuildSection() {
               style={{ transitionDelay: '150ms' }}
             >
               <p>
-                From managing appointments to maintaining patient records and coordinating clinical teams, MedFliq supports healthcare professionals with tools that simplify everyday responsibilities.
+                Appointments pile up. Records need updating. The clinical team needs to stay in sync. MedFliq takes the everyday grind off healthcare professionals' hands so they can spend that time where it actually counts with patients.
               </p>
               <p>
-                By reducing administrative effort and improving access to information, clinics can operate more efficiently while providing consistent, high-quality patient care.
+                Less paperwork, faster access to what you need, and care that doesn't dip just because it's a busy Tuesday.
               </p>
             </div>
           </div>
@@ -122,7 +122,7 @@ export default function AboutBuildSection() {
           style={{ transitionDelay: '300ms' }}
         >
           <p className="text-[17px] md:text-[20px] font-black italic text-med-ink leading-[1.6]">
-            "From front-desk staff to specialists and care teams, MedFliq creates a connected clinic environment where everyone works together seamlessly."
+            "Front desk, specialists, care teams — everyone's finally looking at the same information. That's the whole point."
           </p>
         </div>
 

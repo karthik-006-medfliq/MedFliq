@@ -24,11 +24,11 @@ export default function ServicesWhySection() {
             </h2>
 
             <p className="services-why-reveal services-why-delay-300 text-[16px] sm:text-[17px] text-med-slate font-medium leading-relaxed mb-6">
-              Every clinic has its own workflow, patient mix, and staffing model. MedFliq adapts to those realities instead of forcing a one‑size‑fits‑all solution, so your team can keep doing what they do best.
+              Every clinic has its own rhythm. What works for a solo GP practice doesn't always work for a five-location group with three specialties under one roof. Instead of pretending otherwise, MedFliq bends to fit however your team already operates.
             </p>
 
             <p className="services-why-reveal services-why-delay-300 text-[16px] sm:text-[17px] text-med-slate font-medium leading-relaxed mb-6">
-              From solo practices to multi‑location groups, our platform streams daily operations, reduces admin overhead, and helps deliver consistent, high‑quality care across the entire practice.
+              The result's the same either way, though less time on admin, fewer moving parts to track, and care that doesn't waver just because it's a Monday morning rush or the last appointment on a Friday.
             </p>
           </div>
 

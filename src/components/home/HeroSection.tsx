@@ -33,7 +33,7 @@ export default function HeroSection() {
 
           {/* Body paragraph */}
           <p className={`text-sm md:text-base text-med-slate mb-6 mx-auto leading-relaxed font-medium ${showHeroImage ? 'max-w-xl lg:mx-0' : 'max-w-2xl text-center'}`}>
-            MedFliq unifies fragmented clinic workflows into a single, intelligent platform. From scheduling appointments to managing patient follow‑ups, <span className="text-med-ink font-bold">Fliq 360</span> equips clinics with smart tools that support every staff member and enhance every patient’s experience.
+            MedFliq unifies fragmented clinic workflows into a single, intelligent platform. From scheduling appointments to managing patient follow‑ups, MedFliq equips clinics with smart tools that support every staff member and enhance every patient’s experience.
           </p>
 
           {/* CTA buttons */}

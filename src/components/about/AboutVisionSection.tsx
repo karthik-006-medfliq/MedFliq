@@ -3,22 +3,22 @@ import { useEffect, useRef, useState } from 'react'
 const VISION_CARDS = [
   {
     title: 'Fragmented Clinic Tools',
-    description: 'Clinics juggle multiple apps, spreadsheets, and paper forms daily, creating friction that slows patient care and burdens staff.',
+    description: 'Most clinics run on patchwork an app for this, a spreadsheet for that, paper forms filling in the gaps. It adds up. Staff spend more time managing tools than managing patients, and care slows down as a result.',
     highlight: true,
   },
   {
     title: 'Connected Clinic Workflow',
-    description: 'A single platform unifies appointments, records, and billing, giving every team member instant access to up‑to‑date patient information.',
+    description: 'Put appointments, records, and billing in one place and something changes: anyone on your team can pull up the right patient info, right when they need it. No digging through three systems to find one answer.',
     highlight: true,
   },
   {
     title: 'Intelligent Clinic Automation',
-    description: 'Automation takes care of routine tasks like scheduling, reminders, and billing entries, so staff can focus on care instead of paperwork.',
+    description: 'Nobody went into healthcare to enter billing codes. Automation handles the scheduling, the reminders, the repetitive entries so your staff gets that time back for actual patient care.',
     highlight: true,
   },
   {
     title: 'Coordinated Patient Care',
-    description: 'Real‑time context and streamlined hand‑offs let clinicians move patients smoothly from consult to follow‑up, reducing errors and wait times.',
+    description: 'When a patient moves from consult to follow-up, context should move with them. Clean hand-offs mean fewer things fall through the cracks, and shorter waits for everyone.',
     highlight: true,
   },
 ]
@@ -80,16 +80,16 @@ export default function AboutVisionSection() {
             style={{ transitionDelay: '150ms' }}
           >
             <p>
-              Managing a clinic often means balancing patient care with intense administrative responsibilities. Appointments, medical records, billing, and follow-ups all compete for your attention.
+              Running a clinic means constantly splitting your attention between patient care and admin work that never really stops. Appointments need booking, records need updating, bills need sending, follow-ups need tracking and somehow it all has to happen at once.
             </p>
             <p>
-              Instead of relying on disconnected systems or manual processes, clinics need a way to manage their daily operations from one secure platform without adding friction.
+              The usual fix is a pile of disconnected tools and manual workarounds. But clinics don't need more software. They need one secure place to run everything, without adding another layer of friction.
             </p>
             <p>
-              MedFliq was created to solve this foundational problem.
+              That's the problem MedFliq set out to solve.
             </p>
             <p>
-              We envision a future where every clinic, regardless of its size, has access to practical technology that improves efficiency, supports healthcare teams, and strengthens patient relationships.
+              We believe every clinic whether it's a single doctor's office or a multi-branch operation deserves technology that actually makes things easier, not harder. Technology that supports the people doing the work and strengthens the relationships they've built with patients.
             </p>
           </div>
 
@@ -98,7 +98,7 @@ export default function AboutVisionSection() {
             className={`text-[17px] md:text-[20px] font-black italic text-med-ink mt-8 mb-8 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
             style={{ transitionDelay: '200ms' }}
           >
-            That vision became MedFliq.
+            That belief became MedFliq:
           </p>
 
           {/* Final Paragraph */}
@@ -106,7 +106,7 @@ export default function AboutVisionSection() {
             className={`text-[13px] md:text-[15px] text-med-slate leading-relaxed font-medium max-w-[580px] transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
             style={{ transitionDelay: '250ms' }}
           >
-            A comprehensive healthcare platform designed not as another software layer, but as the central infrastructure connecting your entire clinic.
+            not just another piece of software sitting on top of your existing mess, but the infrastructure your entire clinic runs on.
           </p>
         </div>
 

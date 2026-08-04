@@ -24,17 +24,17 @@ export default function AboutHero() {
   }, [])
 
   return (
-    <section 
+    <section
       ref={sectionRef}
       className="relative w-full pt-2 lg:pt-6 pb-10 lg:pb-16 px-4 sm:px-6 md:px-12 z-10 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-        
+
         {/* Left Column: Text & Stats */}
         <div className="flex flex-col lg:col-span-6 lg:pr-4 xl:pl-12">
-          
+
           {/* Eyebrow */}
-          <div 
+          <div
             className={`flex items-center gap-3 mb-6 sm:mb-8 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
             style={{ transitionDelay: '50ms' }}
           >
@@ -45,8 +45,8 @@ export default function AboutHero() {
           </div>
 
           {/* Heading */}
-          <h1 
-            className={`text-4xl md:text-[52px] lg:text-[60px] font-black text-med-ink leading-[0.98] tracking-tight mb-8 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} 
+          <h1
+            className={`text-4xl md:text-[52px] lg:text-[60px] font-black text-med-ink leading-[0.98] tracking-tight mb-8 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
             style={{ transitionDelay: '100ms' }}
           >
             Elevating
@@ -55,23 +55,23 @@ export default function AboutHero() {
           </h1>
 
           {/* Paragraph */}
-          <p 
+          <p
             className={`text-sm md:text-[15px] text-med-slate leading-relaxed max-w-[500px] font-medium mb-6 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
             style={{ transitionDelay: '150ms' }}
           >
-            MedFliq equips modern clinics with an integrated platform that streamlines appointments, patient records, billing, and daily workflows, letting clinicians focus on care while staff enjoy friction‑free operations.
+            Most clinics run on a patchwork of tools one app for appointments, another for records, a spreadsheet for billing, and sticky notes holding the rest together. MedFliq replaces that patchwork with one platform. Appointments, patient records, billing, daily workflows it's all in one place, which means your clinicians get to spend their time on patients, not on switching tabs.
           </p>
 
           {/* Orange Highlight Text */}
-          <p 
+          <p
             className={`text-xs md:text-[13px] font-bold text-med-primary max-w-[500px] mb-12 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
             style={{ transitionDelay: '200ms' }}
           >
-            Designed for clinics that demand a single, reliable system to manage every patient touchpoint.
+            Every touchpoint, from the first check-in to the last follow-up, runs through a single system you can actually rely on.
           </p>
 
           {/* Stats Block */}
-          <div 
+          <div
             className={`flex flex-wrap gap-12 sm:gap-16 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
             style={{ transitionDelay: '250ms' }}
           >
@@ -86,7 +86,7 @@ export default function AboutHero() {
               <span className="text-[9px] font-bold text-med-ink uppercase tracking-widest">ACTIVE INTELLIGENCE</span>
             </div>
           </div>
-          
+
         </div>
 
         {/* Right Column: Orbit Visual */}

@@ -116,7 +116,7 @@ export default function AboutRoadmapSection() {
           className={`mt-16 text-sm md:text-[15px] text-med-slate leading-[1.6] font-medium max-w-2xl text-center transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
           style={{ transitionDelay: '250ms' }}
         >
-          Our long-term vision is to deliver a rock-solid software foundation that empowers clinics of all sizes to deliver exceptional patient care.
+          We're building toward something bigger: a foundation solid enough that clinics of any size one room or twenty can focus on what they do best, delivering great patient care, without the software getting in the way.
         </p>
 
       </div>

@@ -126,7 +126,7 @@ export default function AboutHeroOrbitVisual({ isVisible }: { isVisible: boolean
           <div className="w-10 h-10 flex items-center justify-center -translate-x-[2px] -translate-y-[2px]">
             <img src="/images/medfliq-logo.png" alt="MedFliq Logo" className="w-full h-full object-contain drop-shadow-sm" />
           </div>
-          <span className="text-[9px] font-black text-med-ink tracking-widest uppercase mt-0.5">Fliq 360</span>
+          <span className="text-[9px] font-black text-med-ink tracking-widest uppercase mt-0.5">MedFliq</span>
         </div>
 
       </div>

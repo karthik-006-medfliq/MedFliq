@@ -48,12 +48,12 @@ export default function ServicesRoadmapSection() {
           </h4>
           
           <h2 className="services-roadmap-reveal services-roadmap-delay-200 text-[36px] sm:text-[42px] lg:text-[48px] font-black text-med-ink leading-tight mb-6">
-            Clinic‑Focused Implementation Journey <br className="hidden md:block" />
+            Clinic-Focused Implementation Journey <br className="hidden md:block" />
             
           </h2>
 
           <p className="services-roadmap-reveal services-roadmap-delay-300 text-[16px] sm:text-[18px] text-med-slate font-medium leading-relaxed max-w-2xl mx-auto">
-            We guide clinics through a step‑by‑step journey, from quick onboarding to full automation, ensuring every stage delivers real operational benefits.
+            Nobody wants a six-month rollout. We get clinics up and running fast, then build from there records first, then the billing and automation pieces once the basics are solid. Each step has to earn its keep before we move to the next one.
           </p>
         </div>
 
