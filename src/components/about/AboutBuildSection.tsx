@@ -1,14 +1,14 @@
 import { useEffect, useRef, useState } from 'react'
 
 const BUILD_FEATURES = [
-  { id: 1, title: 'Effortless appointment scheduling', active: false },
-  { id: 2, title: 'Unified patient records', active: false },
-  { id: 3, title: 'Streamlined billing & invoicing', active: false },
-  { id: 4, title: 'Automated follow-up tracking', active: false },
-  { id: 5, title: 'Optimized staff shift coordination', active: false },
-  { id: 6, title: 'Seamless multi-clinic operations', active: false },
-  { id: 7, title: 'HIPAA-compliant data security', active: false },
-  { id: 8, title: 'All-in-one practice management', active: false },
+  { id: 1, title: 'Comprehensive data analysis', active: false },
+  { id: 2, title: 'Evidence-based guideline matching', active: false },
+  { id: 3, title: 'Real-time cognitive bias checks', active: false },
+  { id: 4, title: 'Automated symptom cross-referencing', active: false },
+  { id: 5, title: 'Medication interaction tracking', active: false },
+  { id: 6, title: 'Transparent clinical reasoning', active: false },
+  { id: 7, title: 'Proactive diagnostic suggestions', active: false },
+  { id: 8, title: 'Explainable AI recommendations', active: false },
 ]
 
 export default function AboutBuildSection() {
@@ -51,7 +51,7 @@ export default function AboutBuildSection() {
               className={`text-[11px] sm:text-xs font-bold text-med-primary uppercase tracking-[0.2em] mb-6 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
               style={{ transitionDelay: '50ms' }}
             >
-              OUR CLINIC IMPACT
+              OUR DIAGNOSTIC IMPACT
             </span>
 
             {/* Heading */}
@@ -59,7 +59,7 @@ export default function AboutBuildSection() {
               className={`text-3xl md:text-4xl lg:text-[40px] font-black text-med-ink leading-[1.1] tracking-tight mb-8 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
               style={{ transitionDelay: '100ms' }}
             >
-              Helping Clinics Work Smarter Every Day
+              Reducing Diagnostic Errors Every Day
             </h2>
 
             {/* Paragraphs */}
@@ -68,10 +68,10 @@ export default function AboutBuildSection() {
               style={{ transitionDelay: '150ms' }}
             >
               <p>
-                Appointments pile up. Records need updating. The clinical team needs to stay in sync. MedFliq takes the everyday grind off healthcare professionals' hands so they can spend that time where it actually counts with patients.
+                There's more patient data than any one person can manually track, guidelines update faster than clinics can keep up with, and pressure has a way of letting bias slip into decisions unnoticed. MedFliq catches what a rushed consultation might otherwise let slide.
               </p>
               <p>
-                Less paperwork, faster access to what you need, and care that doesn't dip just because it's a busy Tuesday.
+                Fewer delays. Hidden risks flagged sooner. Care that stays consistently strong, patient after patient.
               </p>
             </div>
           </div>
@@ -122,7 +122,7 @@ export default function AboutBuildSection() {
           style={{ transitionDelay: '300ms' }}
         >
           <p className="text-[17px] md:text-[20px] font-black italic text-med-ink leading-[1.6]">
-            "Front desk, specialists, care teams — everyone's finally looking at the same information. That's the whole point."
+            "Having an intelligent co-pilot review every case instantly changes the game. We catch what humans naturally miss under pressure."
           </p>
         </div>
 

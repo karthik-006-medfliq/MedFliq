@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from 'react'
 
 const MISSION_CARDS = [
   {
-    title: 'Effortless Simplicity',
-    description: 'No steep learning curve, no lengthy onboarding. If it takes a manual to figure out, we didn\'t build it right.',
+    title: 'Diagnostic Precision',
+    description: "Overlapping symptoms, cognitive bias caught instantly, not eventually. If it doesn't make diagnosis safer, we didn't build it right.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
@@ -15,7 +15,7 @@ const MISSION_CARDS = [
   },
   {
     title: 'Rock-Solid Reliability',
-    description: '99.9% uptime. Patient data is there the second you need it no spinning wheels, no "try again later."',
+    description: "Evidence-based guidance, right when it's needed. No lag, no waiting on validation.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
@@ -23,8 +23,8 @@ const MISSION_CARDS = [
     ),
   },
   {
-    title: 'Patient-First Experience',
-    description: 'Appointments, records, follow-ups everything\'s built around the patient, not the other way around.',
+    title: 'Patient-First Safety',
+    description: "Whether it's catching a risk factor, checking a medication, or validating a diagnosis, it all comes back to the same goal: protecting the patient.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10"></circle>
@@ -35,7 +35,7 @@ const MISSION_CARDS = [
   },
   {
     title: 'Relentless Innovation',
-    description: 'We talk to the clinicians actually using this every day, and we build what they ask for. Fast.',
+    description: 'We work directly with diagnosticians to build agents that keep pace with how messy real medicine actually gets. And we move fast.',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
@@ -90,7 +90,7 @@ export default function AboutMissionSection() {
             className={`text-3xl md:text-4xl lg:text-[42px] font-black text-med-ink leading-[1.1] tracking-tight mb-8 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
             style={{ transitionDelay: '100ms' }}
           >
-            Empowering Clinics with Seamless Digital Workflows
+            Empowering Doctors with AI-Driven Diagnostic Support
           </h2>
 
           {/* Description */}
@@ -98,7 +98,7 @@ export default function AboutMissionSection() {
             className={`text-sm md:text-base text-med-slate leading-[1.6] font-medium max-w-[640px] transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
             style={{ transitionDelay: '150ms' }}
           >
-            Whether you're running a single-room practice or a network with locations across the city, our mission stays the same: give clinics a platform they can actually trust, one that takes paperwork off staff's plates so clinicians can get back to what matters patients.
+            Routine case or a tangled medical history the mission doesn't change. We give doctors an intelligent safety net: a multi-agent co-pilot that takes some of the cognitive load off their plate and catches the risks that are easy to miss.
           </p>
 
         </div>

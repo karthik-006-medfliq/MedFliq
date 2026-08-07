@@ -43,7 +43,7 @@ export default function AboutCTASection() {
           className={`mt-6 lg:mt-8 text-[16px] md:text-[18px] lg:text-[20px] text-med-slate leading-[1.6] font-medium max-w-[700px] transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
           style={{ transitionDelay: '100ms' }}
         >
-          Whether you're opening your first private practice or expanding across multiple locations, MedFliq is ready to support your journey with solutions designed around modern clinical work.
+          Whether you're just opening your first practice or scaling across several locations, MedFliq is built to grow with you with tools shaped around how clinical work actually gets done today.
         </p>
 
       </div>

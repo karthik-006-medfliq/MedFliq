@@ -22,8 +22,8 @@ export default function StatsSection() {
   const stats = [
     {
       title: '24/7',
-      labelLine1: 'Smart Appointment',
-      labelLine2: 'Scheduling',
+      labelLine1: 'Continuous AI',
+      labelLine2: 'Case Review',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-med-primary">
           <circle cx="12" cy="12" r="10"></circle>
@@ -32,9 +32,9 @@ export default function StatsSection() {
       )
     },
     {
-      title: 'Unified',
-      labelLine1: 'Clinic Intelligence',
-      labelLine2: 'Platform',
+      title: 'Validated',
+      labelLine1: 'Evidence-Based',
+      labelLine2: 'Guidance',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-med-primary">
           <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
@@ -45,8 +45,8 @@ export default function StatsSection() {
     },
     {
       title: 'Real-Time',
-      labelLine1: 'Instant Patient',
-      labelLine2: 'Record Access',
+      labelLine1: 'Clinical Risk',
+      labelLine2: 'Identification',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-med-primary">
           <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
@@ -54,9 +54,9 @@ export default function StatsSection() {
       )
     },
     {
-      title: 'End-to-End',
-      labelLine1: 'Full Clinic',
-      labelLine2: 'Automation',
+      title: 'Transparent',
+      labelLine1: 'Explainable AI',
+      labelLine2: 'Recommendations',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-med-primary">
           <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>

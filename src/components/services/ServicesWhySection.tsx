@@ -1,10 +1,10 @@
 export default function ServicesWhySection() {
   const pills = [
-    { text: "Faster appointment handling", delay: "services-why-delay-400" },
-    { text: "Organized patient records", delay: "services-why-delay-500" },
-    { text: "Less administrative burden", delay: "services-why-delay-600" },
-    { text: "Better staff collaboration", delay: "services-why-delay-700" },
-    { text: "Scalable as your clinic grows", delay: "services-why-delay-800" }
+    { text: "Faster risk identification across every patient interaction", delay: "services-why-delay-400" },
+    { text: "Evidence-based validation backed by clinical guidelines", delay: "services-why-delay-500" },
+    { text: "Reduced cognitive bias in every diagnostic decision", delay: "services-why-delay-600" },
+    { text: "Transparent AI reasoning behind every recommendation", delay: "services-why-delay-700" },
+    { text: "Safer patient outcomes, consistently delivered", delay: "services-why-delay-800" }
   ]
 
   return (
@@ -20,15 +20,15 @@ export default function ServicesWhySection() {
             
             <h2 className="services-why-reveal services-why-delay-200 text-[36px] sm:text-[48px] lg:text-[54px] font-black text-med-ink leading-[1.1] tracking-tight mb-8">
               Technology Tailored <br />
-              to How Clinics Work
+              to Clinical Safety
             </h2>
 
             <p className="services-why-reveal services-why-delay-300 text-[16px] sm:text-[17px] text-med-slate font-medium leading-relaxed mb-6">
-              Every clinic has its own rhythm. What works for a solo GP practice doesn't always work for a five-location group with three specialties under one roof. Instead of pretending otherwise, MedFliq bends to fit however your team already operates.
+              Every clinical decision carries weight. A routine-looking consultation can still be hiding overlapping symptoms that are easy to miss. Rather than leaving everything to rapid judgment under pressure, MedFliq works alongside the clinician as an added layer of safety.
             </p>
 
             <p className="services-why-reveal services-why-delay-300 text-[16px] sm:text-[17px] text-med-slate font-medium leading-relaxed mb-6">
-              The result's the same either way, though less time on admin, fewer moving parts to track, and care that doesn't waver just because it's a Monday morning rush or the last appointment on a Friday.
+              The payoff is a diagnostic process with fewer risk factors slipping through, reasoning that's actually been checked, and a standard of care that holds steady whether it's a chaotic Monday morning or the last patient on a Friday afternoon.
             </p>
           </div>
 

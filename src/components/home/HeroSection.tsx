@@ -20,20 +20,20 @@ export default function HeroSection() {
           <div className="inline-flex items-center gap-3 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-[11px] font-bold mb-6 border border-med-primary/10 shadow-premium text-med-primary min-w-[310px] max-w-full justify-center shimmer">
             <div className="w-2 h-2 rounded-full bg-med-primary animate-ping shrink-0" />
             <span className="tracking-[0.25em] uppercase font-black font-mono text-med-primary">
-              Smart Clinic Management Platform
+              AGENTIC CLINICAL DECISION SUPPORT
             </span>
           </div>
 
           {/* Main heading — three lines */}
           <h1 className="text-3xl md:text-4xl lg:text-[50px] font-black leading-[1.1] mb-4 tracking-[-0.03em] text-med-ink">
-            <span className="block mb-1">Clinic Teams</span>
-            <span className="block mb-1">That Don't Just</span>
-            <span className="text-gradient-orange italic block">Collect Data, They Care.</span>
+            <span className="block mb-1">Eliminating Diagnostic Errors</span>
+            <span className="block mb-1">With Multi-Agent AI</span>
+            <span className="text-gradient-orange italic block">Clinical Co-Pilots.</span>
           </h1>
 
           {/* Body paragraph */}
           <p className={`text-sm md:text-base text-med-slate mb-6 mx-auto leading-relaxed font-medium ${showHeroImage ? 'max-w-xl lg:mx-0' : 'max-w-2xl text-center'}`}>
-            MedFliq unifies fragmented clinic workflows into a single, intelligent platform. From scheduling appointments to managing patient follow‑ups, MedFliq equips clinics with smart tools that support every staff member and enhance every patient’s experience.
+            MedFliq's AI agents work alongside physicians reviewing history, checking guidelines, and catching risks before they're missed. One team, one second opinion, every case.
           </p>
 
           {/* CTA buttons */}
@@ -52,14 +52,14 @@ export default function HeroSection() {
               to="/services"
               className="group w-full sm:w-auto bg-white/80 backdrop-blur-md text-med-ink px-8 py-4 rounded-full font-bold text-sm border border-slate-200 hover:border-med-primary/40 hover:bg-white hover:shadow-premium transition-all duration-300 hover:-translate-y-1.5 active:translate-y-0 flex items-center justify-center gap-3 text-center"
             >
-              Explore Services
+              Explore Platform
               <span className="font-mono text-base font-black shrink-0">→</span>
             </Link>
           </div>
 
           {/* Caption */}
           <p className={`text-xs font-bold text-med-slate mt-4 text-center ${showHeroImage ? 'lg:text-left' : ''}`}>
-            Built for modern clinics and independent practices.
+            Built to support doctors, not replace their judgment.
           </p>
         </div>
 

@@ -2,7 +2,7 @@ export default function ServicesRoadmapSection() {
   const cards = [
     {
       number: "01",
-      title: "Rapid Onboarding",
+      title: "Data Integration",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-med-primary transition-transform duration-300 group-hover:scale-110">
           <ellipse cx="12" cy="5" rx="9" ry="3"/>
@@ -14,7 +14,7 @@ export default function ServicesRoadmapSection() {
     },
     {
       number: "02",
-      title: "Core Patient Records",
+      title: "Multi-Agent Validation",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-med-primary transition-transform duration-300 group-hover:scale-110">
           <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
@@ -26,7 +26,7 @@ export default function ServicesRoadmapSection() {
     },
     {
       number: "03",
-      title: "Advanced Billing & Automation",
+      title: "Diagnostic Output",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-med-primary transition-transform duration-300 group-hover:scale-110">
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -44,16 +44,16 @@ export default function ServicesRoadmapSection() {
         {/* Header Section */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h4 className="services-roadmap-reveal services-roadmap-delay-100 text-[11px] sm:text-[12px] font-bold text-med-primary uppercase tracking-[0.2em] mb-4">
-            IMPLEMENTATION ROADMAP
+            AI WORKFLOW
           </h4>
           
           <h2 className="services-roadmap-reveal services-roadmap-delay-200 text-[36px] sm:text-[42px] lg:text-[48px] font-black text-med-ink leading-tight mb-6">
-            Clinic-Focused Implementation Journey <br className="hidden md:block" />
+            Intelligent Diagnostic Support Journey <br className="hidden md:block" />
             
           </h2>
 
           <p className="services-roadmap-reveal services-roadmap-delay-300 text-[16px] sm:text-[18px] text-med-slate font-medium leading-relaxed max-w-2xl mx-auto">
-            Nobody wants a six-month rollout. We get clinics up and running fast, then build from there records first, then the billing and automation pieces once the basics are solid. Each step has to earn its keep before we move to the next one.
+            Nobody wants a black-box AI. Our platform acts immediately by integrating patient history, running it through specialized AI agents for validation, and finally delivering an explainable output that supports your clinical judgment.
           </p>
         </div>
 

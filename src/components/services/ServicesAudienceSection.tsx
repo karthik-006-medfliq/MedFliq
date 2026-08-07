@@ -14,11 +14,11 @@ export default function ServicesAudienceSection() {
             </h4>
             
             <h2 className="text-[42px] sm:text-[48px] lg:text-[56px] font-black text-med-ink leading-tight mb-6">
-                Tailored for Clinics, Doctors, and Patients
+                Tailored for Diagnosticians and Patients
             </h2>
 
             <p className="text-med-slate text-base md:text-lg leading-relaxed font-medium max-w-md">
-                Our platform is crafted for independent clinics, helping doctors streamline appointments, keep patient records organized, and empower staff to deliver better care efficiently.
+                Our platform is crafted to support medical professionals, providing a reliable AI safety net that mitigates cognitive bias and ensures patients receive accurate, highly personalized care.
             </p>
           </div>
 

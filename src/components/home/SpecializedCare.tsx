@@ -24,8 +24,8 @@ export default function SpecializedCare() {
 
   const departments = [
     {
-      title: 'Multi-Specialty Clinics',
-      description: 'Coordinate multiple doctors, shared schedules, and centralized patient records.',
+      title: 'Complex Cases',
+      description: 'Complicated histories. Overlapping symptoms. The platform helps doctors work through both, so diagnoses land closer to right the first time.',
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-med-primary">
           <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
@@ -34,8 +34,8 @@ export default function SpecializedCare() {
       )
     },
     {
-      title: 'Specialty Clinics',
-      description: 'Streamline complex workflows for focused medical treatments and ongoing therapies.',
+      title: 'Routine Consultations',
+      description: 'High patient volume makes it easy for bias or rushed judgment to creep in. Real-time checks help keep every visit even the routine ones as sharp as the first.',
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-med-primary">
           <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
@@ -43,8 +43,8 @@ export default function SpecializedCare() {
       )
     },
     {
-      title: 'Private Practices',
-      description: 'Simplify daily operations from front-desk registration to final follow-ups.',
+      title: 'Preventative Care',
+      description: "Unaddressed risks and gaps in documentation don't stay small they compound. The platform flags them early, before they turn into adverse events.",
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-med-primary">
           <path d="M10 3h4a2 2 0 0 1 2 2v2h-8V5a2 2 0 0 1 2-2zM3 7h18v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
@@ -69,17 +69,17 @@ export default function SpecializedCare() {
           <div className="max-w-2xl">
             <div className="flex items-center gap-3 mb-6">
               <div className="text-[11px] sm:text-xs font-bold text-med-primary uppercase tracking-[0.2em]">
-                SPECIALIZED CARE
+                DIAGNOSTIC SUPPORT
               </div>
             </div>
             <h2 className="text-4xl sm:text-5xl lg:text-[56px] font-black leading-[1.1] text-med-ink tracking-tight mb-6">
-              Software Solutions for<br />
-              <span className="text-med-primary">Every Practice Type.</span>
+              Safer, More Accurate<br />
+              <span className="text-med-primary">Care for Every Patient.</span>
             </h2>
           </div>
           <div className="max-w-xl">
             <p className="text-med-slate text-base md:text-lg leading-relaxed font-medium">
-              Integrating reliable technology with practical tools to organize and simplify your clinic's daily workflows.
+              Collaborative AI intelligence, built into your workflow, to cut down diagnostic errors, support clinical decisions, and improve outcomes across every case doctors see.
             </p>
           </div>
         </div>

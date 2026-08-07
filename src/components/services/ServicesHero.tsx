@@ -2,9 +2,9 @@ import ServicesHeroOrbit from './ServicesHeroOrbit'
 
 export default function ServicesHero() {
   const checkList = [
-    'Seamless appointment scheduling',
-    'Complete patient record management',
-    'Automated clinic operations',
+    'Comprehensive patient data analysis',
+    'Cross-referencing overlapping symptoms',
+    'Transparent clinical reasoning',
   ]
 
   return (
@@ -18,20 +18,20 @@ export default function ServicesHero() {
             <div className="flex items-center gap-2 mb-4 service-hero-reveal">
               <span className="w-[7px] h-[7px] rounded-full bg-med-primary"></span>
               <span className="text-[9px] sm:text-[10px] font-black text-med-primary tracking-[0.2em] uppercase">
-                Our Services
+                Our Capabilities
               </span>
             </div>
 
             {/* Heading */}
             <h1 className="text-[34px] sm:text-[43px] lg:text-[53px] xl:text-[58px] font-black text-med-ink leading-[1.05] tracking-tight mb-6 service-hero-reveal service-hero-delay-1">
-              Clinic-Centric Services <br className="hidden lg:block" />
-              Built for Modern <br className="hidden lg:block" />
-              <span className="text-med-primary italic">Practices.</span>
+              Agentic AI Co-Pilot <br className="hidden lg:block" />
+              Built for Diagnostic <br className="hidden lg:block" />
+              <span className="text-med-primary italic">Accuracy.</span>
             </h1>
 
             {/* Paragraph */}
             <p className="text-[15px] sm:text-[16px] lg:text-[14px] text-med-slate font-medium leading-relaxed mb-8 max-w-[440px] service-hero-reveal service-hero-delay-2">
-               Appointments. Records. Billing. Follow-ups. That's a lot to juggle on top of actual patient care. MedFliq brings every essential workflow into one secure platform, so your team spends less time switching between tools and more time with patients.
+               Time limits. Complex histories. Overlapping symptoms. That's a lot to navigate when making critical decisions. MedFliq brings a team of specialized AI agents into your workflow, validating reasoning and catching risks so you can deliver safer patient care.
             </p>
 
             {/* Checklist */}

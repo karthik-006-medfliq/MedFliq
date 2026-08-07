@@ -3,7 +3,7 @@ import CardSwap, { Card } from '../effects/CardSwap'
 export const aboutCardsData = [
   {
     label: 'REAL-TIME',
-    description: 'Handle consultations and coordinate workflows as they happen, with no lag and no delays.',
+    description: 'Analyze comprehensive patient data instantly as consultations happen, identifying potential risks without delay.',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-med-primary">
         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
@@ -12,7 +12,7 @@ export const aboutCardsData = [
   },
   {
     label: 'SECURE',
-    description: 'Patient records stay protected with security built to meet compliance standards, so you never have to worry.',
+    description: 'Patient data is processed securely, ensuring clinical intelligence is delivered while maintaining complete privacy and compliance.',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-med-primary">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
@@ -21,8 +21,8 @@ export const aboutCardsData = [
     )
   },
   {
-    label: 'UNIFIED',
-    description: 'One reliable system that connects your EMR, billing, and everyday clinic workflows no more switching between tools.',
+    label: 'VALIDATED',
+    description: 'Every clinical decision is cross-referenced against evidence-based guidelines, ensuring the highest standards of care.',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-med-primary">
         <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
@@ -32,8 +32,8 @@ export const aboutCardsData = [
     )
   },
   {
-    label: 'INTELLIGENT',
-    description: 'Smart tools that work alongside your staff, helping them move faster at every step.',
+    label: 'EXPLAINABLE',
+    description: 'Transparent AI recommendations that provide clear clinical reasoning, supporting doctors rather than replacing them.',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-med-primary">
         <circle cx="12" cy="12" r="10"></circle>

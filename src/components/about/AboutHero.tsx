@@ -51,23 +51,15 @@ export default function AboutHero() {
           >
             Elevating
             <br />
-            <span className="text-med-primary italic">Clinic Care.</span>
+            <span className="text-med-primary italic">Diagnostic Accuracy.</span>
           </h1>
 
           {/* Paragraph */}
           <p
-            className={`text-sm md:text-[15px] text-med-slate leading-relaxed max-w-[500px] font-medium mb-6 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
+            className={`text-sm md:text-[15px] text-med-slate leading-relaxed max-w-[500px] font-medium mb-12 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
             style={{ transitionDelay: '150ms' }}
           >
-            Most clinics run on a patchwork of tools one app for appointments, another for records, a spreadsheet for billing, and sticky notes holding the rest together. MedFliq replaces that patchwork with one platform. Appointments, patient records, billing, daily workflows it's all in one place, which means your clinicians get to spend their time on patients, not on switching tabs.
-          </p>
-
-          {/* Orange Highlight Text */}
-          <p
-            className={`text-xs md:text-[13px] font-bold text-med-primary max-w-[500px] mb-12 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
-            style={{ transitionDelay: '200ms' }}
-          >
-            Every touchpoint, from the first check-in to the last follow-up, runs through a single system you can actually rely on.
+            Misdiagnosis hasn't gone away. If anything it's gotten harder to catch. Doctors see patients for less time than they used to, histories often stretch across years and different providers who never talked to each other, and biases quietly shape decisions long before anyone stops to question them. MedFliq works alongside doctors as a clinical co-pilot a set of specialized AI agents that check patient data against medical guidelines in real time, so the details that matter don't get lost in the noise.
           </p>
 
           {/* Stats Block */}
@@ -77,13 +69,13 @@ export default function AboutHero() {
           >
             {/* Stat 1 */}
             <div className="flex flex-col">
-              <span className="text-3xl md:text-[34px] font-black text-med-primary leading-none mb-2">99.9%</span>
-              <span className="text-[9px] font-bold text-med-ink uppercase tracking-widest">UPTIME RELIABILITY</span>
+              <span className="text-3xl md:text-[34px] font-black text-med-primary leading-none mb-2">Multi</span>
+              <span className="text-[9px] font-bold text-med-ink uppercase tracking-widest">AGENT ANALYSIS</span>
             </div>
             {/* Stat 2 */}
             <div className="flex flex-col">
               <span className="text-3xl md:text-[34px] font-black text-med-primary leading-none mb-2">24/7</span>
-              <span className="text-[9px] font-bold text-med-ink uppercase tracking-widest">ACTIVE INTELLIGENCE</span>
+              <span className="text-[9px] font-bold text-med-ink uppercase tracking-widest">CLINICAL SUPPORT</span>
             </div>
           </div>
 

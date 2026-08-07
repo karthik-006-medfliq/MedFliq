@@ -2,23 +2,23 @@ import { useEffect, useRef, useState } from 'react'
 
 const VISION_CARDS = [
   {
-    title: 'Fragmented Clinic Tools',
-    description: 'Most clinics run on patchwork an app for this, a spreadsheet for that, paper forms filling in the gaps. It adds up. Staff spend more time managing tools than managing patients, and care slows down as a result.',
+    title: 'Information Overload',
+    description: "Patient data keeps piling up in modern healthcare, and doctors are stuck manually cross-referencing complex histories in whatever time a consultation allows. That's a recipe for missed details and missed details lead to misdiagnosis.",
     highlight: true,
   },
   {
-    title: 'Connected Clinic Workflow',
-    description: 'Put appointments, records, and billing in one place and something changes: anyone on your team can pull up the right patient info, right when they need it. No digging through three systems to find one answer.',
+    title: 'Multi-Agent Collaboration',
+    description: 'MedFliq runs specialized AI agents in parallel, each checking a different piece of the picture symptoms, medications, history against current medical guidelines in real time.',
     highlight: true,
   },
   {
-    title: 'Intelligent Clinic Automation',
-    description: 'Nobody went into healthcare to enter billing codes. Automation handles the scheduling, the reminders, the repetitive entries so your staff gets that time back for actual patient care.',
+    title: 'Mitigating Cognitive Bias',
+    description: "Even good doctors make worse decisions under pressure; that's just how human judgment works. MedFliq's AI co-pilot acts as an objective second opinion, catching the details that get overlooked before they turn into real errors.",
     highlight: true,
   },
   {
-    title: 'Coordinated Patient Care',
-    description: 'When a patient moves from consult to follow-up, context should move with them. Clean hand-offs mean fewer things fall through the cracks, and shorter waits for everyone.',
+    title: 'Clear AI Reasoning',
+    description: "Trust matters more than accuracy alone. That's why MedFliq shows its work every suggestion comes with clear, step-by-step reasoning, so physicians stay fully in control of patient care, not just following along.",
     highlight: true,
   },
 ]
@@ -71,7 +71,7 @@ export default function AboutVisionSection() {
             style={{ transitionDelay: '100ms' }}
           >
             Our Vision for the Future of<br className="hidden md:block" />
-            Modern Clinical Operations
+            Diagnostic Accuracy
           </h2>
 
           {/* Paragraphs */}
@@ -80,16 +80,10 @@ export default function AboutVisionSection() {
             style={{ transitionDelay: '150ms' }}
           >
             <p>
-              Running a clinic means constantly splitting your attention between patient care and admin work that never really stops. Appointments need booking, records need updating, bills need sending, follow-ups need tracking and somehow it all has to happen at once.
+              There's only so much a doctor can hold in their head. Medical data keeps piling up, consultation windows keep shrinking, and symptoms rarely point cleanly to one answer. Miss a single detail buried in a complicated history, and treatment gets delayed or gets it wrong entirely.
             </p>
             <p>
-              The usual fix is a pile of disconnected tools and manual workarounds. But clinics don't need more software. They need one secure place to run everything, without adding another layer of friction.
-            </p>
-            <p>
-              That's the problem MedFliq set out to solve.
-            </p>
-            <p>
-              We believe every clinic whether it's a single doctor's office or a multi-branch operation deserves technology that actually makes things easier, not harder. Technology that supports the people doing the work and strengthens the relationships they've built with patients.
+              Right now, doctors are mostly left to catch every risk factor themselves, on top of seeing more patients than ever. What they're missing isn't another tool to manage. It's a system that actually thinks alongside them.
             </p>
           </div>
 
@@ -98,16 +92,27 @@ export default function AboutVisionSection() {
             className={`text-[17px] md:text-[20px] font-black italic text-med-ink mt-8 mb-8 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
             style={{ transitionDelay: '200ms' }}
           >
-            That belief became MedFliq:
+            That's what MedFliq set out to build.
           </p>
 
           {/* Final Paragraph */}
-          <p 
-            className={`text-[13px] md:text-[15px] text-med-slate leading-relaxed font-medium max-w-[580px] transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+          <div 
+            className={`flex flex-col gap-4 text-[13px] md:text-[15px] text-med-slate leading-relaxed font-medium max-w-[580px] transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
             style={{ transitionDelay: '250ms' }}
           >
-            not just another piece of software sitting on top of your existing mess, but the infrastructure your entire clinic runs on.
-          </p>
+            <p>
+              Every clinician should have a partner in their corner something that checks decisions against real evidence, catches what fatigue might miss, and lightens the mental load without getting in the way. That's the idea MedFliq grew out of.
+            </p>
+            <p>
+              Not an assistant bolted onto a workflow. A multi-agent clinical co-pilot, built so doctors can diagnose with real confidence, not guesswork.
+            </p>
+            <p>
+              It keeps up too. The platform learns continuously from global medical literature, so its guidance stays current which means a physician in a small clinic has access to the same caliber of diagnostic intelligence as one at a major hospital, regardless of specialty.
+            </p>
+            <p>
+              Where we're headed: a future where preventable diagnostic errors simply stop happening. Give doctors the tools to handle complexity without wearing them down, and patient care gets safer for everyone.
+            </p>
+          </div>
         </div>
 
         {/* Right Column: Cards */}

@@ -68,7 +68,7 @@ export default function Footer() {
             </Link>
             
             <p className="text-med-slate text-base leading-relaxed font-medium max-w-[400px]">
-              Advanced clinic management software designed to support medical decisions, streamline practice workflows, and power the next generation of modern medical centers.
+              An Agentic AI Clinical Decision Support Platform designed to validate medical reasoning, reduce diagnostic errors, and empower doctors with intelligent co-pilots.
             </p>
           </div>
 
@@ -155,7 +155,7 @@ export default function Footer() {
           style={{ transitionDelay: '500ms' }}
         >
           <div className="text-[10px] font-bold text-med-slate uppercase tracking-[0.1em]">
-            © 2026 MedFliq Intelligence. Built for Modern Clinics.
+            © 2026 MedFliq Intelligence. Built for Diagnostic Accuracy.
           </div>
           <div className="flex items-center gap-8">
             <Link to="/privacy" className="text-[10px] font-bold text-med-slate hover:text-med-primary transition-colors uppercase tracking-[0.1em]">

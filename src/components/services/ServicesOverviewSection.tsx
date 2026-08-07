@@ -10,21 +10,26 @@ export default function ServicesOverviewSection() {
           {/* Eyebrow */}
           <div className="mb-6 sm:mb-8 services-overview-reveal services-overview-delay-1">
             <span className="inline-flex items-center justify-center rounded-full bg-white/60 border border-white/80 shadow-[0_2px_12px_rgba(0,0,0,0.04)] backdrop-blur-sm px-4 py-1.5 text-[10px] sm:text-xs font-black uppercase tracking-[0.2em] text-med-primary">
-              Clinic Overview
+              Platform Overview
             </span>
           </div>
 
           {/* Main Heading */}
           <h2 className="text-[32px] sm:text-[42px] md:text-[50px] lg:text-[60px] xl:text-[68px] font-black text-med-ink leading-[1.05] tracking-tight mb-8 sm:mb-10 max-w-[1100px] services-overview-reveal services-overview-delay-2">
-            How Clinics Thrive <br className="hidden md:block" />
-            with a Single Platform <br className="hidden md:block" />
+            How Doctors Diagnose <br className="hidden md:block" />
+            With AI Confidence, <br className="hidden md:block" />
             <span className="text-med-primary italic pr-2">Every Day.</span>
           </h2>
 
-          {/* Paragraph */}
-          <p className="text-[16px] sm:text-[18px] lg:text-[20px] font-medium text-med-slate leading-[1.8] max-w-[900px] lg:max-w-[980px] mx-auto services-overview-reveal services-overview-delay-3">
-            Every clinic runs into the same walls. Scheduling gets messy, records end up scattered across three different tools, staff coordination happens over text and sticky notes, and billing falls behind because nobody has time to catch up. We built one platform that handles all of it, so your clinicians get back to focusing on patients and the rest of the team isn't stuck putting out fires all day.
-          </p>
+          {/* Paragraphs */}
+          <div className="flex flex-col gap-6 text-[16px] sm:text-[18px] lg:text-[20px] font-medium text-med-slate leading-[1.8] max-w-[900px] lg:max-w-[980px] mx-auto services-overview-reveal services-overview-delay-3">
+            <p>
+              Misdiagnosis rarely comes down to one bad decision. More often, it's what happens when a doctor has ten minutes, a stack of scattered notes, and a patient history that doesn't quite add up. Symptoms overlap. Records go missing. Even experienced clinicians can miss something under that kind of pressure.
+            </p>
+            <p>
+              So we built something to close that gap. Rather than one AI reviewing a case, we run several agents in parallel each checking the others' reasoning, catching inconsistencies, flagging what a single pass might miss. Doctors spend less time hunting for missing pieces. More time treating the patient in front of them. With a second layer of scrutiny working quietly in the background.
+            </p>
+          </div>
 
         </div>
       </div>

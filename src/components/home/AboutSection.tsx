@@ -21,10 +21,10 @@ export default function AboutSection() {
   }, [])
 
   const bullets = [
-    'Centralized EMR for every clinic location',
-    'Smart tools that assist doctors and front‑desk staff',
-    'Automated workflows that cut admin friction',
-    'Scalable from solo practices to multi‑branch clinics',
+    'Analyzes comprehensive patient information instantly',
+    'Validates clinical reasoning against medical guidelines',
+    'Actively identifies hidden risks and drug interactions',
+    'Provides fully explainable, transparent recommendations',
   ]
 
   return (
@@ -35,21 +35,21 @@ export default function AboutSection() {
         <div className="flex flex-col relative z-20">
           {/* Eyebrow */}
           <div className={`text-[11px] sm:text-xs font-bold text-med-primary uppercase tracking-[0.15em] mb-4 sm:mb-6 transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            ABOUT US
+            CLINICAL CO-PILOT
           </div>
 
           {/* Heading */}
           <h2 className={`text-[32px] sm:text-5xl lg:text-[56px] font-black leading-[1.1] text-med-ink tracking-tight mb-8 transition-all duration-700 ease-out delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            Your Clinic’s Operating System
+            Your Partner in Diagnostic Accuracy
           </h2>
 
           {/* Paragraphs */}
           <div className={`flex flex-col gap-6 text-med-slate text-base md:text-lg leading-relaxed font-medium mb-12 transition-all duration-700 ease-out delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <p>
-              Running a clinic today means juggling scattered patient records, delayed appointments, and admin work that piles up fast. MedFliq brings it all into one place a single platform built to keep your clinic running smoothly.
+              Misdiagnosis remains a significant challenge, fueled by limited consultation times, massive patient data, and complex histories. Cognitive biases during decision-making can easily lead to missed or delayed identification of diseases.
             </p>
             <p>
-              EMR, billing, scheduling, notes, and daily workflows all live under one roof, so patient intake moves faster, records stay secure, and your team stays in sync.
+              MedFliq’s Agentic AI platform acts as your clinical co-pilot, collaborating with you throughout the diagnostic process to catch what might otherwise be missed, supporting safer, more accurate patient care.
             </p>
           </div>
 

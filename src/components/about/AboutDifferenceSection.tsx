@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
 
 const DIFFERENCE_ITEMS = [
-  'Streamlined appointment flow',
-  'Secure, unified patient records',
-  'Instant team collaboration',
-  'Accurate, automated billing',
-  'Scalable practice infrastructure',
-  'Real-time performance insights',
+  'Automated validation against the latest clinical guidelines, every time',
+  'Proactive identification of risks before they affect patient outcomes',
+  'Real-time alerts for potential medication interactions and conflicts',
+  'Explainable AI recommendations with clear, step-by-step reasoning',
+  'Active reduction of cognitive bias in high-pressure clinical decisions',
+  "Real-time clinical feedback delivered exactly when it's needed most",
 ];
 
 export default function AboutDifferenceSection() {
@@ -48,7 +48,7 @@ export default function AboutDifferenceSection() {
               className={`text-[11px] sm:text-xs font-bold text-med-primary uppercase tracking-[0.2em] mb-6 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
               style={{ transitionDelay: '50ms' }}
             >
-              Why Clinics Trust MedFliq
+              Why Doctors Trust MedFliq
             </span>
 
             {/* Heading */}
@@ -56,7 +56,7 @@ export default function AboutDifferenceSection() {
               className={`text-3xl md:text-4xl lg:text-[42px] font-black text-med-ink leading-[1.1] tracking-tight mb-8 transition-all duration-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
               style={{ transitionDelay: '100ms' }}
             >
-              Empowering Daily Clinic Success
+              Empowering Clinical Decision Making
             </h2>
 
             {/* Paragraphs */}
@@ -65,13 +65,13 @@ export default function AboutDifferenceSection() {
               style={{ transitionDelay: '150ms' }}
             >
               <p>
-                Patient care and smooth operations should go hand in hand. In practice, they often don't. Booking, records, billing, follow-ups one weak link and the whole day gets harder for everyone, staff and patients alike.
+                Accuracy and confidence should go together in clinical work. In practice, they often don't physicians are dealing with huge volumes of patient data, symptoms that overlap in confusing ways, and barely enough time to think it all through. One detail slips by, and treatment gets delayed.
               </p>
               <p>
-                MedFliq puts scheduling, records, billing, and team communication under one roof. Manual handoffs go away. So do the errors that tend to slip through when three different systems don't talk to each other.
+                MedFliq brings in a multi-agent system that reviews clinical reasoning as it happens, checks diagnoses against evidence-based guidelines, and flags potential risks before a decision is locked in.
               </p>
               <p>
-                It also grows with you new location, more staff, another service line, whatever comes next. No rebuilding from scratch, no disruption.
+                It works alongside your expertise, not against it running quietly in the background so you can focus on delivering safer, more personalized care.
               </p>
             </div>
           </div>
