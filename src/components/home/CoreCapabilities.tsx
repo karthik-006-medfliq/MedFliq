@@ -39,13 +39,13 @@ export default function CoreCapabilities() {
                 PLATFORM FEATURES
               </div>
               <h2 className="text-4xl sm:text-5xl lg:text-[56px] font-black leading-[1.1] text-med-ink tracking-tight mb-8">
-              Specialized AI Agents. <br className="hidden lg:block" />
-              <span className="text-med-primary italic">Collaborative</span>
+              One AI Platform for <br className="hidden lg:block" />
+              <span className="text-med-primary italic">Clinical</span>
               <br className="hidden sm:block" />
-              Intelligence.
+              Workflows.
             </h2>
             <p className="text-med-slate text-base md:text-lg leading-relaxed font-medium max-w-md">
-              No single AI model can do it all. That's why the platform runs on a team of specialized agents, each one handling a specific piece of the process analyzing clinical data, validating reasoning, and supporting physicians at every stage of the diagnostic journey.
+              No single AI model can do it all. That's why the platform runs on specialized workflows, handling clinical data, documentation, and coordination to support physicians at every stage.
             </p>
             </div>
           </div>
@@ -56,7 +56,7 @@ export default function CoreCapabilities() {
           
           <div className={`transition-all duration-700 ease-out delay-100 h-full ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}>
             <CoreCapabilityAnimatedCard 
-              title="Comprehensive Patient Analysis"
+              title="AI Medical Scribe"
               description="Complex histories, scattered records, overlapping symptoms the platform pulls it all together into one clear clinical picture doctors can actually work with."
               icon={
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-med-primary">
@@ -70,7 +70,7 @@ export default function CoreCapabilities() {
 
           <div className={`transition-all duration-700 ease-out delay-200 h-full ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}>
              <CoreCapabilityAnimatedCard 
-              title="Guideline-Based Validation"
+              title="Voice-Based Clinical Documentation"
               description="Clinical decisions get checked against the latest medical guidelines and research, so the accuracy holds up when it matters most."
               icon={
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-med-primary">
@@ -83,7 +83,7 @@ export default function CoreCapabilities() {
 
           <div className={`transition-all duration-700 ease-out delay-300 h-full ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}>
             <CoreCapabilityAnimatedCard 
-              title="Hidden Risk Identification"
+              title="OPD and Outpatient Workflow Automation"
               description="Risks, medication interactions, documentation gaps the kind of things that are easy to miss under pressure get caught early, before they turn into errors."
               icon={
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-med-primary">
@@ -95,7 +95,7 @@ export default function CoreCapabilities() {
 
           <div className={`transition-all duration-700 ease-out delay-400 h-full ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}>
             <CoreCapabilityAnimatedCard 
-              title="Transparent Recommendations"
+              title="Hospital Coordination and Intelligence"
               description="Every diagnostic recommendation comes with the reasoning behind it, step by step. Nothing's hidden. It's a co-pilot doctors can trust, not a black box they have to take on faith."
               icon={
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-med-primary">

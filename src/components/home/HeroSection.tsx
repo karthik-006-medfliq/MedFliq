@@ -20,20 +20,20 @@ export default function HeroSection() {
           <div className="inline-flex items-center gap-3 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-[11px] font-bold mb-6 border border-med-primary/10 shadow-premium text-med-primary min-w-[310px] max-w-full justify-center shimmer">
             <div className="w-2 h-2 rounded-full bg-med-primary animate-ping shrink-0" />
             <span className="tracking-[0.25em] uppercase font-black font-mono text-med-primary">
-              AGENTIC CLINICAL DECISION SUPPORT
+              CLINICAL AI CO-PILOT
             </span>
           </div>
 
           {/* Main heading — three lines */}
           <h1 className="text-3xl md:text-4xl lg:text-[50px] font-black leading-[1.1] mb-4 tracking-[-0.03em] text-med-ink">
-            <span className="block mb-1">Eliminating Diagnostic Errors</span>
-            <span className="block mb-1">With Multi-Agent AI</span>
-            <span className="text-gradient-orange italic block">Clinical Co-Pilots.</span>
+            <span className="block mb-1">AI Clinical Copilot for</span>
+            <span className="block mb-1">Hospitals and Clinics</span>
+            <span className="text-gradient-orange italic block">in India.</span>
           </h1>
 
           {/* Body paragraph */}
           <p className={`text-sm md:text-base text-med-slate mb-6 mx-auto leading-relaxed font-medium ${showHeroImage ? 'max-w-xl lg:mx-0' : 'max-w-2xl text-center'}`}>
-            MedFliq's AI agents work alongside physicians reviewing history, checking guidelines, and catching risks before they're missed. One team, one second opinion, every case.
+            MedFliq helps Indian hospitals and outpatient clinics automate clinical documentation, voice notes, and care workflows with an AI clinical co-pilot built for doctors.
           </p>
 
           {/* CTA buttons */}
@@ -44,7 +44,7 @@ export default function HeroSection() {
               to="/contact"
               className="glow group btn-shine w-full sm:w-auto bg-med-primary text-white px-8 py-4 rounded-full font-bold text-sm transition-all duration-300 hover:-translate-y-1.5 active:translate-y-0 flex items-center justify-center gap-4 overflow-hidden relative text-center"
             >
-              <span className="relative z-10">Talk To Our Team</span>
+              <span className="relative z-10">Book a Demo</span>
             </Link>
 
             {/* Secondary — glass */}
@@ -52,7 +52,7 @@ export default function HeroSection() {
               to="/services"
               className="group w-full sm:w-auto bg-white/80 backdrop-blur-md text-med-ink px-8 py-4 rounded-full font-bold text-sm border border-slate-200 hover:border-med-primary/40 hover:bg-white hover:shadow-premium transition-all duration-300 hover:-translate-y-1.5 active:translate-y-0 flex items-center justify-center gap-3 text-center"
             >
-              Explore Platform
+              Explore Solutions
               <span className="font-mono text-base font-black shrink-0">→</span>
             </Link>
           </div>

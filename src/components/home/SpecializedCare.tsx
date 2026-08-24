@@ -24,7 +24,7 @@ export default function SpecializedCare() {
 
   const departments = [
     {
-      title: 'Complex Cases',
+      title: 'For Hospitals',
       description: 'Complicated histories. Overlapping symptoms. The platform helps doctors work through both, so diagnoses land closer to right the first time.',
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-med-primary">
@@ -34,7 +34,7 @@ export default function SpecializedCare() {
       )
     },
     {
-      title: 'Routine Consultations',
+      title: 'For Outpatient Clinics',
       description: 'High patient volume makes it easy for bias or rushed judgment to creep in. Real-time checks help keep every visit even the routine ones as sharp as the first.',
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-med-primary">
@@ -43,7 +43,7 @@ export default function SpecializedCare() {
       )
     },
     {
-      title: 'Preventative Care',
+      title: 'For Doctors',
       description: "Unaddressed risks and gaps in documentation don't stay small they compound. The platform flags them early, before they turn into adverse events.",
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-med-primary">
@@ -73,13 +73,13 @@ export default function SpecializedCare() {
               </div>
             </div>
             <h2 className="text-4xl sm:text-5xl lg:text-[56px] font-black leading-[1.1] text-med-ink tracking-tight mb-6">
-              Safer, More Accurate<br />
-              <span className="text-med-primary">Care for Every Patient.</span>
+              Solutions by <br />
+              <span className="text-med-primary">Care Setting.</span>
             </h2>
           </div>
           <div className="max-w-xl">
             <p className="text-med-slate text-base md:text-lg leading-relaxed font-medium">
-              Collaborative AI intelligence, built into your workflow, to cut down diagnostic errors, support clinical decisions, and improve outcomes across every case doctors see.
+              Collaborative AI intelligence, built into your workflow, to cut down administrative burdens, support clinical decisions, and improve outcomes across every care setting.
             </p>
           </div>
         </div>

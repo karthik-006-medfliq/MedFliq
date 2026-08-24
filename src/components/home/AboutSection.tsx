@@ -40,16 +40,16 @@ export default function AboutSection() {
 
           {/* Heading */}
           <h2 className={`text-[32px] sm:text-5xl lg:text-[56px] font-black leading-[1.1] text-med-ink tracking-tight mb-8 transition-all duration-700 ease-out delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            Your Partner in Diagnostic Accuracy
+            Spend Less Time Documenting, More Time Caring
           </h2>
 
           {/* Paragraphs */}
           <div className={`flex flex-col gap-6 text-med-slate text-base md:text-lg leading-relaxed font-medium mb-12 transition-all duration-700 ease-out delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <p>
-              Misdiagnosis remains a significant challenge, fueled by limited consultation times, massive patient data, and complex histories. Cognitive biases during decision-making can easily lead to missed or delayed identification of diseases.
+              Clinical documentation and consultation notes take up valuable hours, fueled by limited consultation times, massive patient data, and complex histories. Administrative burdens can easily lead to burnout.
             </p>
             <p>
-              MedFliq’s Agentic AI platform acts as your clinical co-pilot, collaborating with you throughout the diagnostic process to catch what might otherwise be missed, supporting safer, more accurate patient care.
+              MedFliq’s AI platform acts as your clinical co-pilot, handling coordination and documentation challenges so you can spend less time typing and more time with patients.
             </p>
           </div>
 
