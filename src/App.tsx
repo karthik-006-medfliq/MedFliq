@@ -1,26 +1,27 @@
+import { Suspense, lazy } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import ErrorBoundary from './components/utils/ErrorBoundary'
 import ScrollToTop from './components/utils/ScrollToTop'
 import VideoBackground from './components/layout/VideoBackground'
-import Home from './pages/Home'
-import Contact from './pages/Contact'
-import About from './pages/About'
-import Services from './pages/Services'
-import Privacy from './pages/Privacy'
-import NewPrivacy from './pages/NewPrivacy'
-import Terms from './pages/Terms'
-import NewTerms from './pages/NewTerms'
-import AIMedicalScribe from './pages/AIMedicalScribe'
-import AIVoiceAssistant from './pages/AIVoiceAssistant'
-import HospitalWorkflow from './pages/HospitalWorkflow'
-import ClinicWorkflow from './pages/ClinicWorkflow'
-import ClinicalDocumentation from './pages/ClinicalDocumentation'
-import MedicalSpeechToText from './pages/MedicalSpeechToText'
-import SolutionsHospitals from './pages/SolutionsHospitals'
-import SolutionsClinics from './pages/SolutionsClinics'
-import AIOpdSoftware from './pages/AIOpdSoftware'
-import Integrations from './pages/Integrations'
-import Security from './pages/Security'
+const Home = lazy(() => import('./pages/Home'))
+const Contact = lazy(() => import('./pages/Contact'))
+const About = lazy(() => import('./pages/About'))
+const Services = lazy(() => import('./pages/Services'))
+const Privacy = lazy(() => import('./pages/Privacy'))
+const NewPrivacy = lazy(() => import('./pages/NewPrivacy'))
+const Terms = lazy(() => import('./pages/Terms'))
+const NewTerms = lazy(() => import('./pages/NewTerms'))
+const AIMedicalScribe = lazy(() => import('./pages/AIMedicalScribe'))
+const AIVoiceAssistant = lazy(() => import('./pages/AIVoiceAssistant'))
+const HospitalWorkflow = lazy(() => import('./pages/HospitalWorkflow'))
+const ClinicWorkflow = lazy(() => import('./pages/ClinicWorkflow'))
+const ClinicalDocumentation = lazy(() => import('./pages/ClinicalDocumentation'))
+const MedicalSpeechToText = lazy(() => import('./pages/MedicalSpeechToText'))
+const SolutionsHospitals = lazy(() => import('./pages/SolutionsHospitals'))
+const SolutionsClinics = lazy(() => import('./pages/SolutionsClinics'))
+const AIOpdSoftware = lazy(() => import('./pages/AIOpdSoftware'))
+const Integrations = lazy(() => import('./pages/Integrations'))
+const Security = lazy(() => import('./pages/Security'))
 import Navbar from './components/layout/Navbar'
 function AppContent() {
   const location = useLocation()
@@ -28,6 +29,7 @@ function AppContent() {
   return (
     <ErrorBoundary>
       <div className="page-transition">
+      <Suspense fallback={<div className="flex h-screen items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-med-primary"></div></div>}>
       <Routes location={location}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -49,6 +51,7 @@ function AppContent() {
         <Route path="/integrations" element={<Integrations />} />
         <Route path="/security" element={<Security />} />
       </Routes>
+      </Suspense>
       </div>
     </ErrorBoundary>
   )
